@@ -1,6 +1,6 @@
 {
   "name": "dsh-fallout76-knowledge",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "type": "module",
   "description": "辐射76群聊知识库：静默学习玩家讨论、带来源检索、冲突和版本管理",
   "main": "lib/index.js",
@@ -16,7 +16,8 @@
     "README.md",
     "LICENSE",
     "NOTICE",
-    "docs"
+    "docs",
+    "data"
   ],
   "scripts": {
     "test": "node --test test/*.test.mjs",

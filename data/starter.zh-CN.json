@@ -1,0 +1,1011 @@
+{
+  "schema": 1,
+  "id": "fallout76-basics-zh",
+  "revision": "2026-11-10.1",
+  "checkedAt": "2026-11-10",
+  "description": "人工整理的中文事实摘要；不含网页全文，不宣称游戏内实测。",
+  "entries": [
+    {
+      "id": "stash-junk",
+      "title": "死亡前先存垃圾，容器别当私人仓库",
+      "body": "收集的垃圾材料及时放进自己的储物箱。地上的袋子、公共容器与私人储物箱不是一回事；退出游戏前不要把贵重物品留在地上或未分配的容器里。",
+      "category": "other",
+      "tags": [
+        "仓库",
+        "垃圾",
+        "死亡掉落",
+        "捡包",
+        "存东西"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：避免垃圾丢失",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/42942/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        },
+        {
+          "title": "Bethesda：找回遗失物品",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/42982/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "scrapbox-purpose",
+      "title": "废料箱只能存制作材料",
+      "body": "Scrapbox（废料箱）用于存拆解后的制作材料，不是武器、护甲和所有杂物的无限仓库。储物箱里的垃圾不会自动搬入废料箱，需自己转移；建造时可使用其中材料。",
+      "category": "crafting",
+      "tags": [
+        "废料箱",
+        "会员箱",
+        "Scrapbox",
+        "仓储",
+        "材料"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Scrapbox",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/48688/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "first-expiry",
+      "title": "会员到期后箱内材料还能取",
+      "body": "Fallout 1st 到期后，废料箱和弹药箱中已有的资源仍能取用，但不能继续存入新材料或弹药。续费前先分清“不能再存”和“原有资源被清空”。",
+      "category": "other",
+      "tags": [
+        "会员",
+        "续费",
+        "到期",
+        "废料箱",
+        "弹药箱"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Fallout 1st membership",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/48683/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "bulk-not-universal",
+      "title": "材料打包不等于全部减重",
+      "body": "打包材料主要方便出售给NPC，部分材料才可能减轻总重量，不能把“所有垃圾打包都省空间”当规律。制作会拆开打包件；携带打包件时使用全部拆解，也会把它拆回原料。",
+      "category": "crafting",
+      "tags": [
+        "打包",
+        "材料",
+        "减重",
+        "垃圾",
+        "塑料"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Bulk Materials",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/45455/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "plans-consumed",
+      "title": "图纸要学习，学完被消耗正常",
+      "body": "未学习的图纸在哔哔小子的笔记栏。学习后图纸被消耗属于正常情况；想制作物品还要满足配方和所需技能条件，不是把图纸放在背包里就自动解锁。",
+      "category": "crafting",
+      "tags": [
+        "图纸",
+        "配方",
+        "笔记",
+        "学习",
+        "制作不了"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：找回遗失物品",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/42982/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        },
+        {
+          "title": "Bethesda：Perk Cards",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/44308/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "display-stash",
+      "title": "展示品找不到先查储物箱",
+      "body": "放到营地展示设施里的物品，找不到时可先检查自己的储物箱。排查遗失物品时也检查角色背包、废料箱以及曾占领的工坊，别把界面位置改变直接当成被删除。",
+      "category": "other",
+      "tags": [
+        "展示架",
+        "展示柜",
+        "失物",
+        "营地",
+        "储物箱"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：找回遗失物品",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/42982/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "pacifist-workshop",
+      "title": "和平模式不保证工坊争夺安全",
+      "body": "和平模式阻止你对其他玩家造成伤害，可减少误伤引发的冲突；但争夺已被占领的工坊会使你进入敌对/PvP状态，即使和平模式已开也不能当作免战保证。",
+      "category": "mechanic",
+      "tags": [
+        "和平模式",
+        "工坊",
+        "PVP",
+        "误伤",
+        "抢工坊"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Pacifist Mode",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/44182/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "loadouts",
+      "title": "25级后用打卡机调整配点",
+      "body": "达到25级后可以用 Punch Card Machine（打卡机）免费重分 S.P.E.C.I.A.L.、调整技能卡并保存配装。车站、基金会、巨坑及玩家营地可找到打卡机；不要把早期点错属性当成永久废号。",
+      "category": "build",
+      "tags": [
+        "打卡机",
+        "洗点",
+        "加点",
+        "25级",
+        "SPECIAL",
+        "配装"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：S.P.E.C.I.A.L. Loadouts",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/53129/",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "crafting-perk-plan",
+      "title": "有制作卡也还需要图纸",
+      "body": "制作能力生效需要把相应 Perk 卡装备到当前配卡，同时学会目标物品的图纸或配方。只升级卡片、却没有装备或没有学图纸，仍可能做不出物品。",
+      "category": "perk",
+      "tags": [
+        "技能卡",
+        "制作卡",
+        "工匠",
+        "做不了",
+        "图纸"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Perk Cards",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/44308/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "perk-ranks",
+      "title": "技能卡同名重复卡升级，不是近似名称通用",
+      "body": "技能卡升级使用同一张卡的重复卡；名字相近的卡可能是不同技能，并不能互相合成。升级会消耗作为材料的卡，处理卡片前先确认自己其他配装是否还需要它。",
+      "category": "perk",
+      "tags": [
+        "Perk",
+        "升星",
+        "重复卡",
+        "技能卡",
+        "合成"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Perk Cards",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/44308/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "perk-coins",
+      "title": "技能币与传奇卡升级属于角色养成",
+      "body": "不用的普通技能卡可以拆成 Perk Coins，用来升级传奇技能卡。账号解锁传奇卡槽与每个角色的传奇卡选择、升级进度要区分，不能把一个角色的升级误认为全角色通用。",
+      "category": "perk",
+      "tags": [
+        "技能币",
+        "传奇卡",
+        "传奇技能",
+        "Perk Coins",
+        "拆卡"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Perk Coins",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51592/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "public-team",
+      "title": "公共队伍从社交菜单加入",
+      "body": "社交菜单可以浏览当前世界的公共队伍，选择有空位的队伍加入或自己创建。队伍目标影响增益，队友建立联系后加成会变化；具体名称和数值以当前游戏界面为准。",
+      "category": "mechanic",
+      "tags": [
+        "公共队伍",
+        "组队",
+        "社交",
+        "队伍加成"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Public Teams",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51265/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "帮助页队伍名称和加成可能保留旧版内容，本包不采用其中数值和完整类型列表。"
+        }
+      ]
+    },
+    {
+      "id": "public-team-locks",
+      "title": "同公共队伍不等于共享营地权限",
+      "body": "加入公共队伍并不让你获得对方营地的任意建造权限；撬开队友锁住的门或容器仍可能被通缉。需要一起建造时，应先核对私人队伍和实际权限。",
+      "category": "mechanic",
+      "tags": [
+        "公共队伍",
+        "私人队伍",
+        "营地",
+        "开锁",
+        "通缉"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Public Teams",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51265/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "帮助页队伍名称和加成可能保留旧版内容，本包不采用其中数值和完整类型列表。"
+        }
+      ]
+    },
+    {
+      "id": "gold-notes",
+      "title": "国库券通过金条机兑换金条",
+      "body": "国库券是兑换金条的凭证，可通过公共事件及相关日常取得，再到金条兑换机兑换。金条、国库券和瓶盖是不同资源；兑换额度、商人货物及解锁条件请看当前版本界面。",
+      "category": "other",
+      "tags": [
+        "国库券",
+        "金条",
+        "兑换机",
+        "Treasury Notes",
+        "货币"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Gold Bullion",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/50462/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "帮助页每周总额度与每日数值存在不一致，本包仅采纳获取途径，不收录总额度。"
+        }
+      ]
+    },
+    {
+      "id": "legendary-scrap",
+      "title": "拆传奇：掉改件与学会配方是两种结果",
+      "body": "传奇制作改版后，拆解带目标词条的传奇装备，有机会获得散装传奇改件，也有机会永久学会某个改件的制作。两者不同，拆一件不保证解锁；改件也可通过玩家交易取得。",
+      "category": "crafting",
+      "tags": [
+        "传奇制作",
+        "拆传奇",
+        "词条",
+        "改件",
+        "学配方",
+        "洗词条"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Legendary Crafting",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/53547/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "legendary-binding",
+      "title": "安装传奇改件前先看绑定限制",
+      "body": "散装传奇改件可交易，但把改件装到装备上后，该装备会变成角色绑定，不能再照普通可交易装备处理。改装前先确认是否准备自用，费用以当前工作台显示为准。",
+      "category": "crafting",
+      "tags": [
+        "角色绑定",
+        "传奇改件",
+        "交易",
+        "改装",
+        "卖不了"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Legendary Crafting",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/53547/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "legendary-modules",
+      "title": "传奇模块不是传奇币",
+      "body": "Legendary Modules（传奇模块）用于传奇装备或改件制作，可从相关活动、每日行动、远征及鼹鼠商人等途径获得。模块属于材料；不要与 Legendary Scrip（传奇币）或散装传奇改件混淆。",
+      "category": "crafting",
+      "tags": [
+        "传奇模块",
+        "传奇币",
+        "改件",
+        "鼹鼠商人",
+        "模块"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Legendary Modules",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/66747/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ammo-converter",
+      "title": "弹药转换机用的是弹药点数",
+      "body": "弹药转换机先收取指定数量的可兑换弹药并记为 AmmoPoints，再用点数换另一类弹药；不是随便放入就等量变成想要的子弹。兑换前检查种类、批量和剩余负重。",
+      "category": "crafting",
+      "tags": [
+        "弹药转换机",
+        "子弹",
+        "AmmoPoints",
+        "换弹药"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Ammo Converter",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51256/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "daily-ops",
+      "title": "每日行动能重复打，分档奖励不是无限领",
+      "body": "每日行动是可重复进入的独立遭遇，敌人、地图和变异会轮换。重复完成仍有基础奖励；按完成时间划分的奖励档位有每日领取限制，不要把重复通关等同于无限领取每日稀有奖励。",
+      "category": "event",
+      "tags": [
+        "每日行动",
+        "Daily Ops",
+        "长老",
+        "奖励",
+        "刷日常"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Daily Ops",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/57848/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "daily-mutations",
+      "title": "每日行动先看敌人变异条件",
+      "body": "进每日行动前先看世界活动里的模式和敌人变异。比如 Resilient 类敌人要求近战收尾，Volatile 类敌人死亡会爆炸；一直射击收不了尾或贴脸被炸，可能是机制而非伤害不足。",
+      "category": "event",
+      "tags": [
+        "每日行动",
+        "变异",
+        "打不死",
+        "近战收尾",
+        "死亡爆炸"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Daily Ops",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/57848/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "activities-rotation",
+      "title": "2026活动改版后别只靠跑到地点触发",
+      "body": "The Backwoods 更新于2026-03-03调整活动：部分原 Events 改称 Activities，并进入地图的活动列表与时间轮换。某些旧攻略写“到地点就开活动”已不适用，应先检查当前地图列表。",
+      "category": "event",
+      "tags": [
+        "活动",
+        "事件",
+        "Activities",
+        "碰撞课程",
+        "触发",
+        "轮换"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "The Backwoods（2026-03-03）后的活动机制",
+      "status": "reference",
+      "reviewAfterDays": 60,
+      "sources": [
+        {
+          "title": "Bethesda：What is an Activity?",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/73968/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "mutated-events",
+      "title": "变异公共事件先看词缀和实际开放情况",
+      "body": "变异公共事件是在公共事件基础上加入敌人变异，机制需按当次词缀处理。它并非所有时段都开放；核对时官方页面还保留未启动问题提示，遇到没刷出时先查当周安排和官方状态。",
+      "category": "event",
+      "tags": [
+        "变异公共事件",
+        "变异事件",
+        "整点",
+        "不刷新",
+        "绿色事件"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "核对于2026-11-10；开放情况需实时复核",
+      "status": "reference",
+      "reviewAfterDays": 14,
+      "sources": [
+        {
+          "title": "Bethesda：Mutated Public Events",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/72309/",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "核对时页面含活动未启动的已知问题提示，因此不保证固定整点开放。"
+        }
+      ]
+    },
+    {
+      "id": "reset-character",
+      "title": "换服不会重置角色的商人额度",
+      "body": "商人瓶盖与传奇兑换机额度按角色重置，换服务器不能把额度刷回来。每日、每周任务重置时间还可能受夏令时影响，别只照旧帖子里的固定北京时间计算。",
+      "category": "mechanic",
+      "tags": [
+        "商人额度",
+        "换服",
+        "重置",
+        "传奇兑换机",
+        "瓶盖",
+        "日常"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：每日与每周重置",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/72290/",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "tent",
+      "title": "生存帐篷是会员的便携补给点",
+      "body": "Fallout 1st 生存帐篷可提供额外快速旅行点和储物等便利；具体设施随帐篷款式不同。它不是第二套完整营地，使用前看清当前款式有哪些设备。",
+      "category": "other",
+      "tags": [
+        "生存帐篷",
+        "会员",
+        "快速旅行",
+        "补给"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Bethesda：Survival Tent",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/48687/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        },
+        {
+          "title": "Bethesda：Fallout 1st membership",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/48683/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ammo-box-core",
+      "title": "弹药箱与核心：别照旧攻略一概排除",
+      "body": "官方弹药箱说明允许完全充能的部分核心存入，但动力甲正在使用或已分配给动力甲的核融合核心有存入限制。存不进去时先检查充能和使用状态；不要沿用“所有核心都不能进弹药箱”的旧说法。",
+      "category": "other",
+      "tags": [
+        "弹药箱",
+        "核心",
+        "核融合核心",
+        "等离子核心",
+        "存不进去"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "按2026-11-10官方弹药箱说明；需随补丁复核",
+      "status": "reference",
+      "reviewAfterDays": 60,
+      "sources": [
+        {
+          "title": "Bethesda：Ammo Box",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/57656/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "lock-limits",
+      "title": "装备锁定能防误操作，但不是万能保护",
+      "body": "物品锁定用于减少误卖、误拆、交易或丢弃。锁定不能阻止死亡时垃圾掉落，也不一定阻止作为制作材料被消耗；核对时官方还提示快速连按的已知问题，贵重装备仍应慢一点确认。",
+      "category": "other",
+      "tags": [
+        "锁定",
+        "误拆",
+        "误卖",
+        "保护装备",
+        "垃圾掉落"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "核对于2026-11-10；已知问题需实时复核",
+      "status": "reference",
+      "reviewAfterDays": 14,
+      "sources": [
+        {
+          "title": "Bethesda：Item Locking",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/72026/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "核对时帮助页仍提示快速连按可能导致锁定物品误售/误兑换；不承诺锁定绝对防丢。"
+        }
+      ]
+    },
+    {
+      "id": "caravans-moved",
+      "title": "旧商队攻略与搬迁后的奖励获取",
+      "body": "官方说明 Burning Springs 更新（2025-12-02）后，Milepost Zero 商队停业，原部分商品转移到 Highway Town 等处。找旧商队奖励时先查迁移后的商人，不要继续照原刷商队路线。",
+      "category": "quest",
+      "tags": [
+        "商队",
+        "Milepost Zero",
+        "零号里程碑",
+        "V63",
+        "奖励",
+        "停业"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "Burning Springs（2025-12-02）迁移说明",
+      "status": "reference",
+      "reviewAfterDays": 60,
+      "sources": [
+        {
+          "title": "Bethesda：Milepost Zero - Caravans",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/73198/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "mutations-basic",
+      "title": "变异和疾病不是一回事",
+      "body": "变异会同时带来收益和代价，不等于普通疾病。辐射可能让人类角色获得变异，血清也可用于获得对应变异；尸鬼角色不能照搬“吃辐射刷变异”的人类流程。",
+      "category": "mechanic",
+      "tags": [
+        "变异",
+        "疾病",
+        "血清",
+        "尸鬼",
+        "辐射"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Fallout 76 mutations",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_mutations",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "正文直连受限，采用搜索索引返回的正文；不收录具体加成百分比、卡片等级或过时流派强度。"
+        }
+      ]
+    },
+    {
+      "id": "mutation-preserve",
+      "title": "保留变异前先确认固化基因",
+      "body": "RadAway或消辐射浴可能移除变异。Starched Genes（固化基因）用于防止随机辐射变异及意外去除；其卡片位置、等级等按当前版本看，别直接抄旧卡组截图。",
+      "category": "perk",
+      "tags": [
+        "固化基因",
+        "变异没了",
+        "消辐宁",
+        "消辐射浴",
+        "Starched Genes"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Fallout 76 mutations",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_mutations",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "正文直连受限，采用搜索索引返回的正文；不收录具体加成百分比、卡片等级或过时流派强度。"
+        }
+      ]
+    },
+    {
+      "id": "mutation-suppression",
+      "title": "变异被压制不一定是消失",
+      "body": "Rad-X可以暂时压制变异的正面效果，即使已装固化基因也可能发生。先看当前药物和状态；不要因为跳跃等效果暂时消失就马上重复购买血清。",
+      "category": "mechanic",
+      "tags": [
+        "变异",
+        "抗辐宁",
+        "Rad-X",
+        "跳不高",
+        "血清",
+        "压制"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Fallout 76 mutations",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_mutations",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "正文直连受限，采用搜索索引返回的正文；不收录具体加成百分比、卡片等级或过时流派强度。"
+        }
+      ]
+    },
+    {
+      "id": "diet-mutually-exclusive",
+      "title": "肉食与草食变异不能同时生效",
+      "body": "Carnivore（肉食）与 Herbivore（草食）互相排斥。选择前看自己依赖的食物加成和供给；不能把两套饮食流派的收益简单叠在同一个角色上。",
+      "category": "build",
+      "tags": [
+        "草食",
+        "肉食",
+        "食物",
+        "变异",
+        "Carnivore",
+        "Herbivore"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Fallout 76 mutations",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_mutations",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "正文直连受限，采用搜索索引返回的正文；不收录具体加成百分比、卡片等级或过时流派强度。"
+        }
+      ]
+    },
+    {
+      "id": "repair-at-bench",
+      "title": "修装备不一定要消耗修理包",
+      "body": "武器和护甲可在对应工作台用材料修理，也可用修理包。耐久归零后需要修复才能正常使用；不要把“只有购买修理包才能维修”当成游戏要求。",
+      "category": "crafting",
+      "tags": [
+        "修装备",
+        "耐久",
+        "修理包",
+        "维修",
+        "工作台"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Durability (Fallout 76)",
+          "url": "https://fallout.fandom.com/wiki/Durability_(Fallout_76)",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "使用 Fallout 76 专页；不套用辐射3/新维加斯的耐久伤害公式。"
+        }
+      ]
+    },
+    {
+      "id": "durability-damage",
+      "title": "76的耐久机制别套用新维加斯",
+      "body": "辐射76装备在未损坏时，单纯耐久下降并不会按比例降低武器伤害或护甲保护。若输出突然变低，不能直接套用辐射3/新维加斯的耐久公式；先确认是否已损坏及其他配装状态。",
+      "category": "mechanic",
+      "tags": [
+        "耐久",
+        "伤害",
+        "武器坏了",
+        "护甲",
+        "修理"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Durability (Fallout 76)",
+          "url": "https://fallout.fandom.com/wiki/Durability_(Fallout_76)",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "使用 Fallout 76 专页；不套用辐射3/新维加斯的耐久伤害公式。"
+        }
+      ]
+    },
+    {
+      "id": "overencumbered",
+      "title": "超重会拖累行动，先分清负重上限和物品重量",
+      "body": "超重时移动会消耗行动点，耗尽后移动更慢。解决思路有增加承载、提高力量或减少所携物品重量，三者并非同一效果；先查看状态和携带物品，再决定如何清包。",
+      "category": "mechanic",
+      "tags": [
+        "超重",
+        "负重",
+        "AP",
+        "行动点",
+        "走不动",
+        "减重"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "基础机制；按核对日资料整理",
+      "status": "reference",
+      "reviewAfterDays": 120,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Carry Weight (Fallout 76)",
+          "url": "https://fallout.fandom.com/wiki/Carry_Weight_(Fallout_76)",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "仅保留超重与减重的基础机制，不导入极限负重数值表。"
+        }
+      ]
+    },
+    {
+      "id": "community-power-armor",
+      "title": "玩家经验：上下动力甲后重新检查减重",
+      "body": "辐射76吧23赛季配装讨论强调上下动力甲时尽量保持减重衔接。可把它作为排查思路：切换后重新看实际负重和生效卡片，不直接照抄旧赛季的整套配点；本包未读取原帖配卡图片。",
+      "category": "build",
+      "tags": [
+        "动力甲",
+        "上下甲",
+        "减重",
+        "负重",
+        "配卡"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "23赛季玩家讨论；只作历史经验",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "辐射76吧：【23赛季】健康人配卡加点护甲武器",
+          "url": "https://tieba.baidu.com/p/10400002232",
+          "kind": "community",
+          "access": "indexed-excerpt",
+          "checkedAt": "2026-11-10",
+          "note": "原帖直连403；只整理能读取的索引摘录。未读取图片卡组，不转录图中配点，也不把23赛季强度当作当前结论。"
+        }
+      ]
+    },
+    {
+      "id": "community-ammo-cost",
+      "title": "玩家经验：选武器也要算弹药供给",
+      "body": "同一篇23赛季讨论提醒部分高消耗武器对弹药资源与负重要求高。新手选路线时把制弹、补弹和携带成本一并考虑；原帖具体武器强度与宏操作不作为本包建议。",
+      "category": "build",
+      "tags": [
+        "武器选择",
+        "弹药",
+        "新手",
+        "资源",
+        "负重",
+        "高斯"
+      ],
+      "platform": "PC/PlayStation/Xbox（按游戏界面核对）",
+      "version": "23赛季玩家讨论；只作资源规划经验",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "辐射76吧：【23赛季】健康人配卡加点护甲武器",
+          "url": "https://tieba.baidu.com/p/10400002232",
+          "kind": "community",
+          "access": "indexed-excerpt",
+          "checkedAt": "2026-11-10",
+          "note": "原帖直连403；只整理能读取的索引摘录。未读取图片卡组，不转录图中配点，也不把23赛季强度当作当前结论。"
+        }
+      ]
+    }
+  ]
+}

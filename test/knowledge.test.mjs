@@ -11,6 +11,7 @@ import { NapcatSource } from '../lib/source.js';
 import { Learner, parseExtraction } from '../lib/learner.js';
 import { searchForSession, makePreStep } from '../lib/runtime.js';
 import { createHandler } from '../lib/http.js';
+import { starterCatalog, ensureStarter } from '../lib/starter.js';
 import { peerOf } from '../lib/context.js';
 const GROUP = 'group_123456789', PRIVATE = 'user_987654321';
 function fixture(t) {
@@ -85,13 +86,14 @@ test('retrieval and context stay scoped; old context is replaced and no-hit does
   const f = fixture(t), m = message(); f.settings.save({ allowedPeers: [GROUP, PRIVATE] });
   f.store.commit(PRIVATE, [candidate(1, m.content, { body: '私聊秘密测试词条' })], [m]);
   const context = { agent: { session: { id: 'qq-group-123456789-r2-123456' } } };
-  assert.deepEqual(searchForSession(f.settings, context, '测试武器'), []);
+  assert.deepEqual(searchForSession(f.settings, context, '测试武器').filter(x=>x.origin!=='starter'), []);
   f.store.commit(GROUP, [candidate(1, m.content)], [m]);
-  assert.equal(searchForSession(f.settings, context, '测试武器').length, 1);
+  assert.equal(searchForSession(f.settings, context, '测试武器').filter(x=>x.origin!=='starter').length, 1);
   assert.deepEqual(searchForSession(f.settings, { agent: { session: { id: 'web-123' } } }, '测试武器'), []);
   assert.equal(peerOf({ sessionId: 'qq-group-1234567890x' }), null);
   const hook = makePreStep(f.settings, m => ({ ...m, role: 'user' }));
   const messages = [{ role: 'user', source: { kind: 'user' }, content: [{ type: 'text', text: '测试武器怎么换弹' }] }];
+  const noHit = await hook({ ...context, messages: [{role:'user', content:[{type:'text',text:'zqxjkvxyz'}]}] }); assert.equal(noHit.messages.length,1);
   const result = await hook({ ...context, messages });
   assert.equal(result.messages.length, 2); assert.ok(!JSON.stringify(result).includes('私聊秘密'));
   assert.equal((await hook({ ...context, messages: result.messages })).messages.length, 2);
@@ -169,4 +171,52 @@ test('public defaults do not read or learn any conversation until explicitly con
   assert.deepEqual(await learner.tick(), { results: [] });
   assert.equal(fs.existsSync(path.join(settings.read().dataDir, 'knowledge.json')), false);
   assert.deepEqual(searchForSession(settings, { sessionId: 'qq-group-123456789' }, '测试武器'), []);
+});
+
+test('starter catalog includes attributed official, wiki and community records without fabricated chat evidence', () => {
+  const pack = starterCatalog(); assert.equal(pack.entries.length, 36);
+  const kinds = new Set(pack.entries.flatMap(x=>x.sources.map(s=>s.kind)));
+  assert.deepEqual([...kinds].sort(), ['community','official','wiki']);
+  for(const entry of pack.entries) { assert.ok(entry.sources.every(s=>s.url.startsWith('https://') && s.checkedAt)); assert.notEqual(entry.status,'verified'); }
+});
+
+test('starter retrieval works with no NapCat database; sources reach context', async t => {
+  const f=fixture(t);f.settings.save({napcatDb:path.join(f.settings.home,'not-installed.sqlite')});
+  const ctx={sessionId:'qq-group-123456789'};
+  const entries=searchForSession(f.settings,ctx,'打卡机'); assert.ok(entries.some(x=>x.seedId.endsWith(':loadouts')));
+  const hook=makePreStep(f.settings,m=>({...m,role:'user'}));
+  const result=await hook({...ctx,messages:[{role:'user',content:[{type:'text',text:'怎么用打卡机洗点'}]}]});
+  assert.ok(JSON.stringify(result).includes('help.bethesda.net')); assert.ok(JSON.stringify(result).includes('reference'));
+  assert.equal(f.store.read().entries.length,36); assert.deepEqual(f.store.read().cursors,{});
+});
+
+test('starter import preserves old chat data, cursors and budget and is idempotent after edits or retirement', t => {
+  const f=fixture(t),m=message();f.store.initialize(GROUP,{time:99,seen:[['old',99]]});f.store.reserve(GROUP,48);
+  f.store.commit(GROUP,[candidate(m.msg_id,m.content)],[m],{advance:false});
+  const old=f.store.read();assert.equal(ensureStarter(f.settings.read()).added,36);
+  const seeded=f.store.read().entries.find(x=>x.origin==='starter');f.store.review(seeded.id,{status:'retired',body:'管理员保留的修订内容',note:'旧攻略停用'});
+  assert.equal(ensureStarter(f.settings.read()).added,0);
+  const now=f.store.read();assert.deepEqual(now.cursors,old.cursors);assert.deepEqual(now.budget,old.budget);assert.equal(now.entries.length,37);
+  assert.equal(now.entries.find(x=>x.id===seeded.id).body,'管理员保留的修订内容');assert.equal(now.entries.find(x=>x.id===seeded.id).status,'retired');
+});
+
+test('group corrections to starter entries stay in that group and preserve website provenance', t => {
+  const f=fixture(t);f.settings.save({allowedPeers:[GROUP,PRIVATE]});ensureStarter(f.settings.read());
+  const seed=f.store.read().entries.find(x=>x.peer===GROUP&&x.seedId.endsWith(':loadouts'));
+  const m=message(123,'这是假设用于测试的不同版本配点经验');
+  f.store.commit(GROUP,[candidate(m.msg_id,m.content,{title:seed.title,body:m.content,platform:seed.platform,version:seed.version})],[m]);
+  const updated=f.store.read();assert.equal(updated.entries.find(x=>x.id===seed.id).status,'disputed');
+  assert.equal(updated.entries.find(x=>x.id===seed.id).sources[0].url,seed.sources[0].url);
+  assert.equal(updated.entries.find(x=>x.peer===PRIVATE&&x.seedId===seed.seedId).status,'reference');
+});
+
+test('disabled plugin does not populate starter and locked store refuses partial import', t => {
+  const f=fixture(t);f.settings.save({enabled:false});assert.equal(ensureStarter(f.settings.read()).added,0);assert.equal(f.store.read().entries.length,0);
+  f.settings.save({enabled:true});fs.mkdirSync(f.store.lock,{recursive:true});
+  assert.throws(()=>ensureStarter(f.settings.read()),/busy/);assert.equal(f.store.read().entries.length,0);
+});
+
+test('source review date and per-entry expiry are respected even after a new import', t => {
+  const f=fixture(t),pack=structuredClone(starterCatalog());pack.entries=[pack.entries[0]];pack.entries[0].sources[0].checkedAt='2020-01-01';
+  f.store.importStarter(GROUP,pack);const entry=f.store.search(GROUP,'存垃圾')[0];assert.equal(entry.needsReview,true);
 });
