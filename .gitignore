@@ -1,0 +1,12 @@
+node_modules/
+*.tgz
+*.zip
+.DS_Store
+._*
+coverage/
+.env
+.env.*
+knowledge.json
+fallout76-knowledge.json
+*.sqlite*
+.write-lock/

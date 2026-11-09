@@ -1,0 +1,59 @@
+{
+  "name": "dsh-fallout76-knowledge",
+  "version": "0.1.2",
+  "type": "module",
+  "description": "辐射76群聊知识库：静默学习玩家讨论、带来源检索、冲突和版本管理",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "docs"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check lib/index.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "*",
+    "@deepseek-ai/dsh-llm": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-llm": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hurtblack/dsh-fallout76-knowledge.git"
+  },
+  "homepage": "https://github.com/Hurtblack/dsh-fallout76-knowledge#readme",
+  "bugs": {
+    "url": "https://github.com/Hurtblack/dsh-fallout76-knowledge/issues"
+  }
+}
