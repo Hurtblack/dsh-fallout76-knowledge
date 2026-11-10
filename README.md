@@ -72,3 +72,7 @@ npm pack
 测试采用真实临时 SQLite 数据库和可控提取模型，覆盖静默学习、随机消息ID/乱序、首轮起点、进度恢复、证据校验、去重冲突、会话隔离、开关/并发/预算、文件保护及 HTTP 宿主鉴权与同源管理。真实宿主与模型验证结果见 [验证记录](docs/VALIDATION.md)。Windows 端仍须确认实际 DSH / 桥接版本、普通消息落库和界面加载。
 
 插件只有读取源数据库、调用模型、维护知识库与注入参考的功能，没有 QQ 发送 API。管理接口要求宿主认证；变更操作同时要求同源 JSON 请求。群友不能通过本插件的工具接口修改配置或将经验升级为“已核实”。
+
+## Windows AstrBot：群聊风格组件 v0.4.0
+
+Windows 若实际由 AstrBot + group_chat_plus 回复，安装独立的 AstrBot ZIP，按 [Windows 升级与回滚](docs/WINDOWS-ASTRBOT-STYLE.md) 验收。它复用目标群历史和群事件，以可回滚的受控风格影响 AstrBot 的请求；不修改本 DSH 包或其知识库、预算和人设。两个宿主的插件不能互装。

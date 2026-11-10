@@ -1,0 +1,16 @@
+{
+  "enabled": {"description": "启用辐射76群聊风格", "type": "bool", "default": false},
+  "target_group": {"description": "唯一目标 QQ 群号", "type": "string", "default": ""},
+  "platform_id": {"description": "AstrBot 平台实例 ID（不是 QQ 群号）", "type": "string", "default": ""},
+  "platform_name": {"description": "平台类型名称（OneBot v11 常见为 aiocqhttp，以实际值为准）", "type": "string", "default": "aiocqhttp"},
+  "bot_ids": {"description": "需要排除的机器人 QQ 号，必须包含当前账号", "type": "list", "default": []},
+  "style_directory": {"description": "独立风格库目录，须预先创建并使用绝对路径", "type": "string", "default": ""},
+  "gcp_history_file": {"description": "已有 group_chat_plus 目标群历史 JSON 的绝对路径；留空时只学习新消息", "type": "string", "default": ""},
+  "learn_style": {"description": "从历史与新到消息学习", "type": "bool", "default": true},
+  "inject_style": {"description": "将当前风格加入目标群模型请求", "type": "bool", "default": true},
+  "min_dialogue": {"description": "最低群友对话样本数，至少 3 个发言者", "type": "int", "default": 12},
+  "update_every": {"description": "首次应用后再次评估所需新增样本数", "type": "int", "default": 24},
+  "daily_runs": {"description": "每日评估上限（UTC，不调用模型）", "type": "int", "default": 12},
+  "interval_seconds": {"description": "评估间隔（秒）", "type": "int", "default": 90},
+  "log_hook": {"description": "记录请求钩子附加的风格版本，不记录提示词正文", "type": "bool", "default": false}
+}

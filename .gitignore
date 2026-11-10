@@ -10,3 +10,6 @@ knowledge.json
 fallout76-knowledge.json
 *.sqlite*
 .write-lock/
+
+__pycache__/
+*.py[cod]

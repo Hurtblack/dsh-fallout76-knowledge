@@ -4,3 +4,15 @@ No upstream meme dataset or implementation code is included.
 Not affiliated with Bethesda, DeepSeek, QQ or the referenced project.
 
 Starter data consists of independently written factual summaries with source links. Source websites retain rights to their original content. No full articles or chat histories are bundled.
+
+Style learning concept reference: NickCharlie/astrbot_plugin_self_learning
+(AGPL-3.0, upstream 204ee8dd10ae739daa4dac1cbfc551df59dfd093).
+https://github.com/NickCharlie/astrbot_plugin_self_learning
+Compatibility reference: Him666233/astrbot_plugin_group_chat_plus
+(AGPL-3.0, upstream aa97e0e35a18733e73db753238dd2a3021446e42)
+and the public AstrBot plugin API.
+https://github.com/Him666233/astrbot_plugin_group_chat_plus
+The style learner and native adapter are independently implemented under this project's
+MIT license. No code, assets, prompts, chat history or trained data from those projects
+are distributed. The optional compatibility verifier runs against a separately supplied
+local installation; neither upstream project is bundled.
