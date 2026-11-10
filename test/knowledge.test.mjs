@@ -173,11 +173,14 @@ test('public defaults do not read or learn any conversation until explicitly con
   assert.deepEqual(searchForSession(settings, { sessionId: 'qq-group-123456789' }, '测试武器'), []);
 });
 
-test('starter catalog includes attributed official, wiki and community records without fabricated chat evidence', () => {
-  const pack = starterCatalog(); assert.equal(pack.entries.length, 77);
+test('starter catalog attributes web references and user tables without fabricated links or evidence', () => {
+  const pack = starterCatalog(); assert.equal(pack.entries.length, 285);
   const kinds = new Set(pack.entries.flatMap(x=>x.sources.map(s=>s.kind)));
-  assert.deepEqual([...kinds].sort(), ['community','official','wiki']);
-  for(const entry of pack.entries) { assert.ok(entry.sources.every(s=>s.url.startsWith('https://') && s.checkedAt)); assert.notEqual(entry.status,'verified'); }
+  assert.deepEqual([...kinds].sort(), ['community','official','submitted','wiki']);
+  for (const entry of pack.entries) {
+    assert.ok(entry.sources.every(s => s.checkedAt && (s.kind === 'submitted' ? !('url' in s) : s.url.startsWith('https://'))));
+    assert.notEqual(entry.status, 'verified');
+  }
 });
 
 test('starter retrieval works with no NapCat database; sources reach context', async t => {
@@ -222,21 +225,50 @@ test('source review date and per-entry expiry are respected even after a new imp
 });
 
 
-test('v0.2.0 upgrade adds 41 records without replacing corrected or retired entries or learning progress', t => {
+test('catalog upgrades from v0.2.0 and v0.3.0 preserve retired corrections, cursors and budget', t => {
   const f = fixture(t), pack = starterCatalog();
-  const oldPack = { ...pack, revision: '2026-11-10.1', entries: pack.entries.filter(e => !e.id.startsWith('exp-')) };
+  const v030 = { ...pack, revision: '2026-11-10.2', entries: pack.entries.filter(e => !/^legendary-(mod|module)-/.test(e.id)) };
+  const oldPack = { ...v030, revision: '2026-11-10.1', entries: v030.entries.filter(e => !e.id.startsWith('exp-')) };
   assert.equal(oldPack.entries.length, 36);
   f.store.importStarter(GROUP, oldPack);
   const oldEntry = f.store.read().entries[0];
   f.store.review(oldEntry.id, { status: 'retired', body: '管理员此前修订，请保留', note: '升级保留测试' });
   f.store.initialize(GROUP, { time: 12345, seen: [['abc', 12345]] }); f.store.reserve(GROUP, 48);
   const before = f.store.read();
-  assert.equal(ensureStarter(f.settings.read()).added, 41);
+  assert.equal(f.store.importStarter(GROUP, v030).added, 41);
+  assert.equal(f.store.read().entries.length, 77);
+  assert.equal(ensureStarter(f.settings.read()).added, 208);
   const after = f.store.read();
-  assert.equal(after.entries.length, 77);
+  assert.equal(after.entries.length, 285);
   assert.deepEqual(after.entries.find(e => e.id === oldEntry.id), before.entries.find(e => e.id === oldEntry.id));
   assert.deepEqual(after.cursors, before.cursors); assert.deepEqual(after.budget, before.budget);
   assert.equal(ensureStarter(f.settings.read()).added, 0);
+});
+
+test('legendary lookup distinguishes same-name equipment and missing rewards from zero', async t => {
+  const f = fixture(t);
+  const session = { sessionId: 'qq-group-123456789' };
+  const lookup = query => searchForSession(f.settings, session, query)[0];
+  const rows = starterCatalog().entries;
+  assert.equal(rows.filter(e => e.legendaryMod && e.category === 'weapon').length, 81);
+  assert.equal(rows.filter(e => e.legendaryMod && e.category === 'armor').length, 82);
+  assert.equal(rows.filter(e => e.moduleRewards).length, 44);
+  assert.equal(rows.flatMap(e => e.moduleRewards?.conditions ?? []).filter(c => c.minimum === null).length, 16);
+  assert.equal(lookup('武器防御者多少概率').legendaryMod.effect, '40%概率自动格挡攻击');
+  assert.equal(lookup('护甲防御者多少概率').legendaryMod.effect, '5%概率自动格挡攻击');
+  assert.equal(lookup('动力甲反射').legendaryMod.english, 'Reflective');
+  assert.equal(lookup('动力甲贵族').category, 'armor');
+  assert.equal(lookup('普通护甲三星反射').legendaryMod.english, 'Reflex');
+  assert.equal(lookup('辐射轰隆传奇模块').moduleRewards.conditions[0].minimum, null);
+  assert.equal(lookup('月光私酿狂欢派对传奇模块').moduleRewards.conditions[0].minimum, 0);
+  assert.deepEqual(lookup('拆四星盒子给多少传奇模块').moduleRewards.conditions.map(c => c.minimum), [3, 6, 12, 24]);
+  const hook = makePreStep(f.settings, m => ({ ...m, role: 'user' }));
+  const result = await hook({ ...session, messages: [{ role: 'user', content: [{ type: 'text', text: '四星暴怒是什么效果' }] }] });
+  const injected = result.messages.at(-1).content[0].text;
+  assert.match(injected, /Raging.*\+5%.*\+25%/s);
+  assert.match(injected, /3%/);
+  assert.match(injected, /"kind":"submitted"/);
+  assert.match(injected, /"status":"disputed"/);
 });
 
 test('all eight expanded build bodies and bounded citations reach context without losing stored provenance', t => {

@@ -5,9 +5,9 @@
 ## 安装
 
 1. 定位当前 DSH_HOME、DSH CLI、运行 profile 以及 bridge 使用的 `messages.sqlite`。备份 profile 配置。宿主需要 Node ≥22.13 且支持 `node:sqlite`。
-2. 从 GitHub Releases 下载 `dsh-fallout76-knowledge-0.3.0.tgz`，用实际 profile 安装：
+2. 取得本地发布包 `dsh-fallout76-knowledge-0.3.1.tgz`，用实际 profile 安装：
    ```powershell
-   dsh plugin --profile desktop add "D:\Downloads\dsh-fallout76-knowledge-0.3.0.tgz"
+   dsh plugin --profile desktop add "D:\Downloads\dsh-fallout76-knowledge-0.3.1.tgz"
    ```
    `desktop` 是示例。若使用其他 profile，替换为实际名称。不要覆盖整份 cordis 配置，也不需要更换原有 QQ 接入方案。
 3. 重启 DSH，打开“设置 → 辐射76知识库 → 学习设置”。默认会话列表为空；添加 `group_你的群号`，每行一个。若确实要学习私聊，显式添加 `user_QQ号`，其知识仍与群隔离。
@@ -32,7 +32,7 @@
 
 ## 从0.1.2 / 0.2.0升级，以及只有AstrBot时怎么处理
 
-- 用实际profile安装0.3.0安装包并重启或热加载插件。保留原 `fallout76-knowledge.json` 设置和 `knowledge.json`，不要用基础包替换整份知识文件。
-- 若允许群号已配置且插件启用，管理页首次加载/后台检查会补齐77条内置资料（0.2.0已有36条时只新增41条）。查看来源链接、核对日期和搜索结果即可验证，不需要发送群消息，也不需要调用DeepSeek整理。
+- 用实际profile安装 0.3.1 安装包并重启或热加载插件。保留原 `fallout76-knowledge.json` 设置和 `knowledge.json`，不要用基础包替换整份知识文件。
+- 若允许群号已配置且插件启用，管理页首次加载/后台检查会补齐 285 条内置资料（0.3.0 已有 77 条时新增 208 条）。查看来源链接、核对日期和搜索结果即可验证，不需要发送群消息，也不需要调用DeepSeek整理。
 - 自动学习可以先关闭，但“启用知识库”保持开启，即可单独查看基础资料。消息库缺失时仍不能学习聊天；基础条数增加不代表已接通QQ群。
 - 如果实际是AstrBot，请继续保持它的群发送关闭，不为测试强装能主动发言的桥接，不创建空的messages.sqlite掩盖问题。需要另行实现只接收落库的适配，才能让后续群聊学习运作。AstrBot对话接入DSH的检索也需单独验证。
