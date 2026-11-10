@@ -12,7 +12,7 @@ import { Learner, parseExtraction } from '../lib/learner.js';
 import { searchForSession, makePreStep } from '../lib/runtime.js';
 import { createHandler } from '../lib/http.js';
 import { starterCatalog, ensureStarter } from '../lib/starter.js';
-import { peerOf } from '../lib/context.js';
+import { peerOf, knowledgeContext } from '../lib/context.js';
 const GROUP = 'group_123456789', PRIVATE = 'user_987654321';
 function fixture(t) {
   const home = fs.mkdtempSync(path.join(os.tmpdir(), 'fo76-test-'));
@@ -174,7 +174,7 @@ test('public defaults do not read or learn any conversation until explicitly con
 });
 
 test('starter catalog includes attributed official, wiki and community records without fabricated chat evidence', () => {
-  const pack = starterCatalog(); assert.equal(pack.entries.length, 36);
+  const pack = starterCatalog(); assert.equal(pack.entries.length, 77);
   const kinds = new Set(pack.entries.flatMap(x=>x.sources.map(s=>s.kind)));
   assert.deepEqual([...kinds].sort(), ['community','official','wiki']);
   for(const entry of pack.entries) { assert.ok(entry.sources.every(s=>s.url.startsWith('https://') && s.checkedAt)); assert.notEqual(entry.status,'verified'); }
@@ -187,16 +187,16 @@ test('starter retrieval works with no NapCat database; sources reach context', a
   const hook=makePreStep(f.settings,m=>({...m,role:'user'}));
   const result=await hook({...ctx,messages:[{role:'user',content:[{type:'text',text:'怎么用打卡机洗点'}]}]});
   assert.ok(JSON.stringify(result).includes('help.bethesda.net')); assert.ok(JSON.stringify(result).includes('reference'));
-  assert.equal(f.store.read().entries.length,36); assert.deepEqual(f.store.read().cursors,{});
+  assert.equal(f.store.read().entries.length,starterCatalog().entries.length); assert.deepEqual(f.store.read().cursors,{});
 });
 
 test('starter import preserves old chat data, cursors and budget and is idempotent after edits or retirement', t => {
   const f=fixture(t),m=message();f.store.initialize(GROUP,{time:99,seen:[['old',99]]});f.store.reserve(GROUP,48);
   f.store.commit(GROUP,[candidate(m.msg_id,m.content)],[m],{advance:false});
-  const old=f.store.read();assert.equal(ensureStarter(f.settings.read()).added,36);
+  const old=f.store.read();assert.equal(ensureStarter(f.settings.read()).added,starterCatalog().entries.length);
   const seeded=f.store.read().entries.find(x=>x.origin==='starter');f.store.review(seeded.id,{status:'retired',body:'管理员保留的修订内容',note:'旧攻略停用'});
   assert.equal(ensureStarter(f.settings.read()).added,0);
-  const now=f.store.read();assert.deepEqual(now.cursors,old.cursors);assert.deepEqual(now.budget,old.budget);assert.equal(now.entries.length,37);
+  const now=f.store.read();assert.deepEqual(now.cursors,old.cursors);assert.deepEqual(now.budget,old.budget);assert.equal(now.entries.length,starterCatalog().entries.length+1);
   assert.equal(now.entries.find(x=>x.id===seeded.id).body,'管理员保留的修订内容');assert.equal(now.entries.find(x=>x.id===seeded.id).status,'retired');
 });
 
@@ -219,4 +219,62 @@ test('disabled plugin does not populate starter and locked store refuses partial
 test('source review date and per-entry expiry are respected even after a new import', t => {
   const f=fixture(t),pack=structuredClone(starterCatalog());pack.entries=[pack.entries[0]];pack.entries[0].sources[0].checkedAt='2020-01-01';
   f.store.importStarter(GROUP,pack);const entry=f.store.search(GROUP,'存垃圾')[0];assert.equal(entry.needsReview,true);
+});
+
+
+test('v0.2.0 upgrade adds 41 records without replacing corrected or retired entries or learning progress', t => {
+  const f = fixture(t), pack = starterCatalog();
+  const oldPack = { ...pack, revision: '2026-11-10.1', entries: pack.entries.filter(e => !e.id.startsWith('exp-')) };
+  assert.equal(oldPack.entries.length, 36);
+  f.store.importStarter(GROUP, oldPack);
+  const oldEntry = f.store.read().entries[0];
+  f.store.review(oldEntry.id, { status: 'retired', body: '管理员此前修订，请保留', note: '升级保留测试' });
+  f.store.initialize(GROUP, { time: 12345, seen: [['abc', 12345]] }); f.store.reserve(GROUP, 48);
+  const before = f.store.read();
+  assert.equal(ensureStarter(f.settings.read()).added, 41);
+  const after = f.store.read();
+  assert.equal(after.entries.length, 77);
+  assert.deepEqual(after.entries.find(e => e.id === oldEntry.id), before.entries.find(e => e.id === oldEntry.id));
+  assert.deepEqual(after.cursors, before.cursors); assert.deepEqual(after.budget, before.budget);
+  assert.equal(ensureStarter(f.settings.read()).added, 0);
+});
+
+test('all eight expanded build bodies and bounded citations reach context without losing stored provenance', t => {
+  const f = fixture(t); ensureStarter(f.settings.read());
+  const builds = f.store.read().entries.filter(e => e.buildDetails);
+  assert.equal(builds.length, 8);
+  for (const entry of builds) {
+    assert.equal(entry.status, 'experience'); assert.equal(entry.verification.liveTested, false);
+    const before = structuredClone(entry), context = knowledgeContext([entry]);
+    assert.ok(context.length > 0 && context.length <= 4500);
+    const row = JSON.parse(context.split('\n')[1]);
+    assert.equal(row.body, entry.body); assert.equal(row.liveTested, false);
+    assert.equal(row.sourceCount, entry.sources.length); assert.ok(row.sources.length <= 3);
+    assert.deepEqual(entry, before);
+    assert.ok(f.store.search(GROUP, entry.title).some(e => e.id === entry.id));
+  }
+});
+
+test('oversized first context record does not suppress a later fitting result', () => {
+  const row = { id: 'short', title: '短条目', body: '可容纳的游戏机制', lastSeen: Date.now(), sources: [], evidence: [] };
+  const context = knowledgeContext([{ ...row, id: 'large', body: 'x'.repeat(5000) }, row], 700);
+  assert.ok(context.length <= 700); assert.match(context, /可容纳的游戏机制/); assert.ok(!context.includes('"large"'));
+  assert.equal(knowledgeContext([row], 10), '');
+});
+
+test('research source mappings resolve and eight dated snapshots stay out of the runtime catalog', () => {
+  const research = new URL('../docs/research/2026-11-10-expanded/', import.meta.url);
+  const candidates = JSON.parse(fs.readFileSync(new URL('knowledge-candidates.json', research), 'utf8')).entries;
+  const sources = JSON.parse(fs.readFileSync(new URL('sources.json', research), 'utf8')).sources;
+  const sourceIds = new Set(sources.map(s => s.id));
+  const catalogIds = new Set(starterCatalog().entries.map(e => e.id));
+  assert.equal(candidates.length, 49);
+  const snapshots = candidates.filter(e => !e.handoff.starterReviewEligible); assert.equal(snapshots.length, 8);
+  for (const e of candidates) {
+    for (const id of [...e.verification.sourceIds, ...e.verification.supplementalSourceIds]) assert.ok(sourceIds.has(id), id);
+    assert.equal(catalogIds.has(e.id), e.handoff.starterReviewEligible);
+  }
+  for (const e of starterCatalog().entries) {
+    assert.notEqual(e.classification, 'time-limited'); assert.ok(!('validFrom' in e) && !('validUntil' in e));
+  }
 });

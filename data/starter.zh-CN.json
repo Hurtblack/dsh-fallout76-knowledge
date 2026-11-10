@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "id": "fallout76-basics-zh",
-  "revision": "2026-11-10.1",
+  "revision": "2026-11-10.2",
   "checkedAt": "2026-11-10",
-  "description": "人工整理的中文事实摘要；不含网页全文，不宣称游戏内实测。",
+  "description": "77条中文基础与扩展资料：商店、活动机制、8套配卡路线；2026-11-10核对，非游戏内实测。限时快照单独保存在研究文档，不参与自动导入。",
   "entries": [
     {
       "id": "stash-junk",
@@ -1006,6 +1006,3102 @@
           "note": "原帖直连403；只整理能读取的索引摘录。未读取图片卡组，不转录图中配点，也不把23赛季强度当作当前结论。"
         }
       ]
+    },
+    {
+      "id": "exp-npc-cap-pool",
+      "title": "瓶盖商人共享销售额度，采购图纸按商人查",
+      "body": "常规 NPC 商人的回收瓶盖池由同一角色共享。官方商人页给普通总池 1,400 瓶盖，促销时以商人界面显示为准。火车站商人和白泉购物中心的商人适合买基础物资或找指定图纸。库存按商人和商品查，别把一家店有某图纸理解成所有商人都卖。共享回收额度与各商人的出售库存是两件事。",
+      "category": "mechanic",
+      "tags": [
+        "瓶盖",
+        "NPC商人",
+        "火车站",
+        "白泉",
+        "图纸"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：NPC Vendors",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/45431/~/how-do-npc-vendors-work-in-fallout-76%3F/1000",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "通用瓶盖池。旧式重置描述与专门重置页或促销不能合用，避免承诺准确刷新时刻。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 vendors",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_vendors",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "核对商人类别及商人示例，采用可读索引。"
+        },
+        {
+          "title": "Bethesda Support：每日和每周重置",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/72290/",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "泛用帮助页给商店周二 11:00 EST，与当月特价结束口径不可互换，不能据此断言每个商品开始时间。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "npc",
+          "vendors",
+          "reset"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "商人页的 24 小时表述未当作精确刷新时刻。基础包 reset-character 已覆盖换服不重置额度。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-bullion-vendor-map",
+      "title": "金条图纸在哪买：79号避难所、基金会、陨石坑和公路镇",
+      "body": "79 号避难所的 Regs 是特勤局护甲等图纸的常规来源；按废土客主线推进至可以访问他。基金会找 Samuel，陨石坑找 Mortimer，部分图纸按该阵营声望解锁。公路镇 Highway Town 还有 Windy Park。若特定图纸今天找不到，先确认商人、主线和声望。米涅瓦只有轮到该图纸才是替代来源。",
+      "category": "route",
+      "tags": [
+        "金条",
+        "图纸",
+        "Regs",
+        "Samuel",
+        "Mortimer",
+        "Windy-Park",
+        "声望"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季，含 Burning Springs 新区域",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：Gold Bullion",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/50462/",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "页内每周总额 1700 与每天 400 加每周 300 自相矛盾；避用周总额。"
+        },
+        {
+          "title": "Fallout Wiki：Gold bullion",
+          "url": "https://fallout.fandom.com/wiki/Gold_bullion",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；只采用可读索引，核对商人、常规额度口径与地点。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 reputations",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_reputations",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引；核对阵营声望限制。"
+        },
+        {
+          "title": "Fallout Wiki：Secret Service armor",
+          "url": "https://fallout.fandom.com/wiki/Secret_Service_armor",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，结合金条来源核对图纸；不引用旧护甲数值。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "gold",
+          "goldwiki",
+          "reputation",
+          "secret"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-bullion-smiley-budget",
+      "title": "急缺少量金条时查 Smiley，别按旧帮助页算周总额",
+      "body": "废土客主线完成后，可到 Wayward 找 Smiley 用瓶盖买金条。资料显示常规每周最多从他处买 300 金条，和金条机的每日国库券兑换分别计量。官方页同时给出每天 400、Smiley 每周 300 和每周合计 1,700，彼此对不上，购买前以当前界面为准。促销周另看公告。",
+      "category": "mechanic",
+      "tags": [
+        "金条",
+        "Smiley",
+        "Wayward",
+        "瓶盖",
+        "兑换额度"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 45,
+      "sources": [
+        {
+          "title": "Bethesda Support：Gold Bullion",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/50462/",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "页内每周总额 1700 与每天 400 加每周 300 自相矛盾；避用周总额。"
+        },
+        {
+          "title": "Fallout Wiki：Gold bullion",
+          "url": "https://fallout.fandom.com/wiki/Gold_bullion",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；只采用可读索引，核对商人、常规额度口径与地点。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "gold",
+          "goldwiki"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "保留相互冲突的口径；不推算一个现行总上限。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-minerva-how-to-buy",
+      "title": "米涅瓦按清单轮换，通常可省四分之一金条",
+      "body": "米涅瓦收金条，位置可能在基金会、陨石坑、阿特拉斯堡或白泉。常规小摊和大促使用不同轮换表。可比较的同款图纸通常约比常驻商人便宜 25%，大促主要扩大清单；她有部分其他来源的图纸。挑指定部件时先确认本轮清单。常驻阵营商人的声望限制不等于米涅瓦的购买限制。",
+      "category": "route",
+      "tags": [
+        "米涅瓦",
+        "Minerva",
+        "金条",
+        "图纸",
+        "白泉",
+        "大促"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：Minerva",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/57845/~/minerva---npc---fallout-76",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "官方只说明轮换、地点与大促形式，不能作为某日在线证明。"
+        },
+        {
+          "title": "Fallout Wiki：Minerva",
+          "url": "https://fallout.fandom.com/wiki/Minerva",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对 2026-11-12 至 16 的第8号轮换；无在线实测。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "minhelp",
+          "minwiki",
+          "minnuka",
+          "minfb",
+          "minban"
+        ],
+        "supplementalSourceIds": [
+          "minnuka",
+          "minfb",
+          "minban"
+        ],
+        "notes": "稳定机制条目；当前窗口另查限时报告。没有用社区攻略的金条解锁绝对说法。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-scrip-murmrgh-market",
+      "title": "锈镐传奇商人、兑换机与第26赛季星级价格",
+      "body": "在车站等地用传奇兑换机交不留的传奇装备，得 Legendary Scrip（传奇币）。锈镐酒吧 Rusty Pick 的 Murmrgh 用传奇币卖按类别和星级随机的装备，亦可看其材料货架。第26赛季补丁把各类装备在兑换机的一至四星回收价统一为 15/25/50/150，商人一至三星常规随机装备的价格统一为 25/35/60。活动价格与机器剩余额度看界面。拆解是另一条处理渠道。",
+      "category": "mechanic",
+      "tags": [
+        "传奇币",
+        "Scrip",
+        "锈镐",
+        "Murmrgh",
+        "传奇兑换机",
+        "四星"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季 1.7.26.13 起，核至 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 45,
+      "sources": [
+        {
+          "title": "Bethesda Support：Purveyor",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/46457/~/purveyor---npc-vendor---fallout-76",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "商人及 Rusty Pick 地点；具体星级价格以第26赛季正式补丁优先。"
+        },
+        {
+          "title": "Fallout Wiki：Legendary exchange machine",
+          "url": "https://fallout.fandom.com/wiki/Legendary_exchange_machine",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引；用于确认兑换机地点。"
+        },
+        {
+          "title": "The Slasher Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-slasher-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第26赛季正式补丁 1.7.26.13；独特装备、传奇兑换、不屈边界、复刻赛季与原生主机版本。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "purv",
+          "machine",
+          "slasher"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-stamps-giuseppe-catalog",
+      "title": "远征邮票找 Giuseppe：冷肩、自动斧和联合动力甲",
+      "body": "远征结算的 Stamps 是邮票，到白泉避难所 Whitespring Refuge 找 Giuseppe Della Ripa 兑换指定图纸。资料所列常规价为冷肩 500、自动斧 500、联合动力甲部件每张 120 邮票；报价以商店为准，整套还要另外准备制作材料和所需改件。旧攻略的自动斧 1,000 邮票属于调价前。购买邮票图纸不要求原子商店当期返场。",
+      "category": "route",
+      "tags": [
+        "远征邮票",
+        "Stamps",
+        "Giuseppe",
+        "白泉",
+        "冷肩",
+        "自动斧",
+        "联合动力甲"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 45,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Fallout 76 Expeditions",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_Expeditions",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；采用可读索引核对远征名称、邮票与目标关系。"
+        },
+        {
+          "title": "Fallout Wiki：Giuseppe Della Ripa",
+          "url": "https://fallout.fandom.com/wiki/Giuseppe_Della_Ripa",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，确认白泉避难所的邮票商人。"
+        },
+        {
+          "title": "Fallout Wiki：Cold Shoulder",
+          "url": "https://fallout.fandom.com/wiki/Cold_Shoulder",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，结合商人页；不根据历史资料推断当前原子商店售卖。"
+        },
+        {
+          "title": "Fallout Wiki：Auto axe (Fallout 76)",
+          "url": "https://fallout.fandom.com/wiki/Auto_axe_(Fallout_76)",
+          "kind": "wiki",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "可读正文；历史原子商店渠道与常规邮票渠道分开，未核对实时在售。"
+        },
+        {
+          "title": "Fallout Wiki：Union power armor",
+          "url": "https://fallout.fandom.com/wiki/Union_power_armor",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对逐件图纸。固定报价为资料记录，购买以游戏为准。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "expwiki",
+          "gius",
+          "cold",
+          "autoaxe",
+          "union"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-plans-fixer-vs-reward",
+      "title": "拿到修理工实物与学会修理工图纸是两件事",
+      "body": "Wolf in Sheep’s Clothing 任务给修理工步枪实物。图纸属于 Encryptid（加密）事件可能掉落的另一个奖励，先走完相关任务线再查图纸掉落；单次通关不能保证。已经有枪时可先检查自动机匣和弹药，未必要等图纸才能开始练自动步枪。",
+      "category": "route",
+      "tags": [
+        "修理工",
+        "The-Fixer",
+        "Encryptid",
+        "图纸",
+        "加密事件"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Fallout Wiki：The Fixer",
+          "url": "https://fallout.fandom.com/wiki/The_Fixer",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；仅使用可读索引及相关活动资料。武器任务奖励和图纸奖励分开。"
+        },
+        {
+          "title": "Fallout Wiki：Encryptid",
+          "url": "https://fallout.fandom.com/wiki/Encryptid",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，核对任务链与事件机制；无实测掉率。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "fixer",
+          "encrypt"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "掉落概率与各服玩家摊位挂牌未知；按 Wiki 可读索引。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-plans-gauss-shotgun-route",
+      "title": "高斯霰弹枪图纸：基金会盟友常驻线与米涅瓦备选",
+      "body": "基金会 Samuel 对定居者声望达到 Ally（盟友）的角色售高斯霰弹枪本体图纸，资料常规价 500 金条。部分改件另买。米涅瓦的对应轮换可能也有本体图纸，可在她到场前查清单。价格和换购条件以当时游戏界面为准。",
+      "category": "route",
+      "tags": [
+        "高斯霰弹枪",
+        "Gauss-Shotgun",
+        "Samuel",
+        "米涅瓦",
+        "金条"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 45,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Gauss shotgun",
+          "url": "https://fallout.fandom.com/wiki/Gauss_shotgun",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，核对 Samuel 的友好度和图纸来源。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 reputations",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_reputations",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引；核对阵营声望限制。"
+        },
+        {
+          "title": "Bethesda Support：Minerva",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/57845/~/minerva---npc---fallout-76",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "官方只说明轮换、地点与大促形式，不能作为某日在线证明。"
+        },
+        {
+          "title": "Fallout Wiki：Minerva",
+          "url": "https://fallout.fandom.com/wiki/Minerva",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对 2026-11-12 至 16 的第8号轮换；无在线实测。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "gauss",
+          "reputation",
+          "minhelp",
+          "minwiki",
+          "minfb"
+        ],
+        "supplementalSourceIds": [
+          "minfb"
+        ],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-atomic-vs-fallout-first",
+      "title": "原子商店、Fallout 1st 订阅和单独季票怎么区分",
+      "body": "Atomic Shop 是游戏内商店，原子可购买，也可从指定赛季奖励获得。Fallout 1st 是订阅，官方列每月 1,650 原子、私人冒险/自定义世界、订阅期便利功能及专属优惠或领取项。单独用原子买 Fallout 1st Seasons Pass 可解锁赛季的付费奖励路径；私人世界、会员月领及储物权限按订阅条款判断。涂装与本体解锁分开，个别物品要先学基础图纸。平台或商店钱包限制以官方帮助页为准。",
+      "category": "mechanic",
+      "tags": [
+        "原子",
+        "Atoms",
+        "Fallout-1st",
+        "会员",
+        "季票",
+        "商店",
+        "涂装"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：How does the Atomic Shop work?",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/44201/~/how-does-the-atomic-shop-work",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "仅采用入口、支付与涂装使用机制，不沿用页面对商品优势的笼统概括。"
+        },
+        {
+          "title": "Bethesda Support：Fallout 1st membership",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/48683",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "订阅功能、原子额度、领取和平台钱包限制。"
+        },
+        {
+          "title": "Bethesda Support：Seasons",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/53930/~/seasons---fallout-76",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "用于确认 SCORE、票券与季票；复刻规则以第26赛季正式补丁为准。"
+        },
+        {
+          "title": "The Slasher Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-slasher-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第26赛季正式补丁 1.7.26.13；独特装备、传奇兑换、不屈边界、复刻赛季与原生主机版本。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "atomhelp",
+          "first",
+          "seasons",
+          "slasher"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "会员结束后储物取出与营帐细节由基础包覆盖。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-season-tickets-legacy-pool",
+      "title": "赛季票券和远征邮票分开，复刻赛季共用票池",
+      "body": "完成挑战赚 SCORE 以提升赛季等级，等级提升会给赛季票券，用于已解锁页的奖励。第26赛季新增复刻赛季，当期与复刻季使用同一份赛季票券；首个复刻是 Armor Ace and the Power Patrol in Cold Steel。远征邮票归 Giuseppe 使用。具体奖励页和赛季结算时间看当期公告及游戏界面。",
+      "category": "mechanic",
+      "tags": [
+        "SCORE",
+        "赛季票券",
+        "复刻赛季",
+        "Legacy-Seasons",
+        "邮票"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.26.13 起",
+      "status": "reference",
+      "reviewAfterDays": 45,
+      "sources": [
+        {
+          "title": "Bethesda Support：Seasons",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/53930/~/seasons---fallout-76",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "用于确认 SCORE、票券与季票；复刻规则以第26赛季正式补丁为准。"
+        },
+        {
+          "title": "The Slasher Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-slasher-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第26赛季正式补丁 1.7.26.13；独特装备、传奇兑换、不屈边界、复刻赛季与原生主机版本。"
+        },
+        {
+          "title": "《Fallout 76》“杀人魔”更新与赛季概览",
+          "url": "https://fallout.bethesda.net/zh-CN/news/fallout-76-the-slasher-update-season-overview",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "用于确认官方简中赛季名与奖励系统。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "seasons",
+          "slasher",
+          "seasonzh"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-unique-gear-mod-changes-s26",
+      "title": "第26赛季独特装备允许换传奇词条",
+      "body": "The Slasher 加入独特装备的传奇改装，可给支持的独特武器和护甲换传奇词条或加第四星。10 月补丁让独特效果在哔哔小子和交易菜单可见。操作前对照装备检查页、可替换的星级和绑定提示；独特名称不能证明仍是原始掉落词条。",
+      "category": "crafting",
+      "tags": [
+        "独特装备",
+        "独特效果",
+        "传奇改件",
+        "第26赛季",
+        "冷肩"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季 1.7.26.13–1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 60,
+      "sources": [
+        {
+          "title": "The Slasher Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-slasher-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第26赛季正式补丁 1.7.26.13；独特装备、传奇兑换、不屈边界、复刻赛季与原生主机版本。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – October 20, 2026",
+          "url": "https://fallout.bethesda.net/en-NZ/news/fallout-76-update-notes-october-20",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服 1.7.27.11，覆盖 PC、Xbox、PlayStation。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "slasher",
+          "oct"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "逐件可改例外未穷举；不重复基础包的通用绑定规则。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-player-vending-camp-plans",
+      "title": "玩家营地售货机用瓶盖，图纸价格由卖家设定",
+      "body": "地图上查对外显示的玩家营地和售货标识，到营地看售货机。玩家自行以瓶盖挂牌可交易物品，价格和库存随卖家变动；NPC 商人的共享回收池和玩家售货机分开。旧版「给售货机接电就自动公开地图」已被营地系统补丁改掉。找图纸时核对完整名称、是否已经学过以及实物/图纸区分。",
+      "category": "mechanic",
+      "tags": [
+        "玩家商店",
+        "C.A.M.P.",
+        "售货机",
+        "瓶盖",
+        "图纸",
+        "交易"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Wild Appalachia Patch 9 Notes",
+          "url": "https://fallout.bethesda.net/en-EU/news/fallout-76-wild-appalachia-patch-9-notes-may-7-2019",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对玩家商店使用瓶盖；地图与供电说明由2021补丁修订。"
+        },
+        {
+          "title": "Locked & Loaded Update Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-locked-and-loaded-update-notes-april-27-2021",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对营地图标与商店供电变化。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 vendors",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_vendors",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "核对商人类别及商人示例，采用可读索引。"
+        }
+      ],
+      "topic": "shops",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "playerold",
+          "playernew",
+          "vendors"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "不承诺玩家最低价、实时挂牌或所有装备可交易。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-public-event-join-level",
+      "title": "公共事件从地图加入，官方活动指南标注10级开放",
+      "body": "正式服地图的 Featured Activity 区域可找到公共事件，公共事件有专用图标。Bethesda 2026 年 7 月的指南明确写公共事件 10 级开放。到场先看开场倒计时、启动交互和胜利条件。整理者建议：有人还在传送时，若倒计时允许可等一下；输出有限时可做收集、维修或护送。活动结算通常有经验和战利品，特定奖励随事件变化。",
+      "category": "event",
+      "tags": [
+        "公共事件",
+        "地图",
+        "10级",
+        "开场",
+        "等人"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        },
+        {
+          "title": "The Backwoods Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-backwoods-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第24赛季正式公告；活动轮换与大脚怪。"
+        }
+      ],
+      "topic": "events",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "eventguide",
+          "back"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "官方指南页末另有泛称各级可尝试活动，不能据此抹掉正文明确的10级表述。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-public-event-feed-people",
+      "title": "Feed the People：投料后守生产线，故障时按提示修",
+      "body": "在地图开放 Feed the People 时去 Mama Dolce’s Food Processing。用终端启动流程，找并投进指定原料，防守生产设备，出故障按提示检查或修复。成功可拿罐头肉炖菜及事件奖励。整理者建议：新手站在设备附近盯故障，别把人全拉到刷怪口。不同补丁改过事件，固定数量、波次和奖励倍率以当前结算为准。",
+      "category": "event",
+      "tags": [
+        "Feed-the-People",
+        "喂饱人民",
+        "妈妈多尔切",
+        "食物",
+        "罐头",
+        "新手"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：Feed the People",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/44646/~/feed-the-people-event-quest---fallout-76",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "任务目标；奖励不采用历史固定数量。"
+        },
+        {
+          "title": "Fallout Wiki：Feed the People",
+          "url": "https://fallout.fandom.com/wiki/Feed_the_People",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对罐头肉炖菜与玩法。"
+        },
+        {
+          "title": "The Backwoods Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-backwoods-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第24赛季正式公告；活动轮换与大脚怪。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – July 21, 2026",
+          "url": "https://fallout.bethesda.net/en-EU/news/fallout-76-update-notes-july-21-2026",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服；围剿提示、部分公共活动和狂欢节调整。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "feed",
+          "feedwiki",
+          "back",
+          "jul"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-public-event-eviction-scrubber",
+      "title": "Eviction Notice：有人守辐射净化器，有人清肉袋",
+      "body": "地图开放 Eviction Notice 时加入基金会前哨。看目标栏修复、保住辐射净化器，分人清场上的肉袋和超级变种人；净化器损坏时靠近前先考虑抗辐射。整理者建议：有人站点负责修机，其余队员清怪和支援，别全队只守远处刷怪口。可遇到传奇敌人并获得事件结算；传奇数量和刷点效率不做保证。",
+      "category": "event",
+      "tags": [
+        "Eviction-Notice",
+        "驱逐通知",
+        "辐射净化器",
+        "肉袋",
+        "传奇装备"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Eviction Notice",
+          "url": "https://fallout.fandom.com/wiki/Eviction_Notice_%28event%29?file=FO76_Reward_Lists_Eviction_Notice.png",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引文字；未读取链接参数所指奖励图。用正式补丁排除旧目标描述。"
+        },
+        {
+          "title": "The Backwoods Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-backwoods-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第24赛季正式公告；活动轮换与大脚怪。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – July 21, 2026",
+          "url": "https://fallout.bethesda.net/en-EU/news/fallout-76-update-notes-july-21-2026",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服；围剿提示、部分公共活动和狂欢节调整。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "evict",
+          "back",
+          "jul"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "社区记录与旧攻略对怪物强度和传奇收益描述差异很大；仅留目标机制。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-public-event-radiation-rumble-roles",
+      "title": "Radiation Rumble：护住拾荒者，也要有人下洞收矿",
+      "body": "地图出现 Radiation Rumble 后去 Emmett Mountain Disposal Site。队伍需要保护拾荒者，同时下高辐射通道采集并交矿；目标进度与存活情况影响奖励。整理者建议：抗辐射足的人跑矿，其他人守 NPC，别全员集中打怪。奖励以实际事件结算为准，旧攻略里的固定掉率不通用。",
+      "category": "event",
+      "tags": [
+        "Radiation-Rumble",
+        "辐射激斗",
+        "收矿",
+        "拾荒者",
+        "防辐射"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Radiation Rumble",
+          "url": "https://fallout.fandom.com/wiki/Radiation_Rumble",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对护送与收矿目标。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "radrumble",
+          "eventguide"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-public-event-uninvited-boss",
+      "title": "部分公共事件打完还能遇到额外首领",
+      "body": "第24赛季 The Backwoods 给部分公共事件加了额外首领遭遇。某些事件结束后可能出现大脚怪或其他不速之客；大脚怪可以逃走，及时击败它有机会拿带 Thrillseeker 的四星传奇。整理者建议：结算后看一眼屏幕提示和附近队友动向。首发推广周的高出现率不适用于普通轮换。",
+      "category": "event",
+      "tags": [
+        "大脚怪",
+        "Bigfoot",
+        "不速之客",
+        "公共事件",
+        "四星"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "The Backwoods 起，核至第26赛季",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "The Backwoods Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-backwoods-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第24赛季正式公告；活动轮换与大脚怪。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        }
+      ],
+      "topic": "events",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "back",
+          "eventguide"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-mutated-party-pack-rule",
+      "title": "变异公共事件的三会员奖励：全体可得强化包",
+      "body": "变异公共事件是在原目标上加敌人词缀，例如死亡爆炸、未攻击时隐身、击杀后留毒区。官方帮助说明同场至少三位 Fallout 1st 会员时，符合结算的参加者都可得强化 Mutated Party Pack。普通结算可能有经验、传奇、国库券或变异包。动身前看地图和当期日历；帮助页核对时仍挂着未开场的已知问题。",
+      "category": "event",
+      "tags": [
+        "变异公共事件",
+        "变异派对包",
+        "Fallout-1st",
+        "会员",
+        "词缀"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "Bethesda Support：Mutated Public Events",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/72309/",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "核对时页面仍列未开场的已知问题。奖励和三会员规则有正文。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        }
+      ],
+      "topic": "events",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "mut",
+          "eventguide"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "基础包已收录开放不定和词缀提醒；本条的新增要点是三会员结算规则。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-daily-ops-uplink-decryption",
+      "title": "每日行动：Uplink 抱点，Decryption 分区搜敌和关设备",
+      "body": "从地图活动列表进入每日行动，可单人或最多四人。Uplink 修复信号设备后守两个信号点，站在点内协同推进；敌人的 Piercing Gaze 会破坏潜行思路。Decryption 按进度找敌人和持码目标，关拦截设备，警惕 Savage Strike 的护甲穿透。组队时前者抱点，后者可分区后按标记集合。基础包另有每日分档领取规则；结算可能有独特奖励，逐季奖池应重新查。",
+      "category": "event",
+      "tags": [
+        "每日行动",
+        "Daily-Ops",
+        "Uplink",
+        "Decryption",
+        "Elder",
+        "上行链路",
+        "解密"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：Daily Ops",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/57848/~/daily-ops---fallout-76",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "地图入口、模式、变异与奖励档。逐图条件另核。"
+        },
+        {
+          "title": "Fallout Wiki：Daily Ops",
+          "url": "https://fallout.fandom.com/wiki/Daily_Ops",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对模式、穿透与结算。精确赛季掉落池未采用。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – October 20, 2026",
+          "url": "https://fallout.bethesda.net/en-NZ/news/fallout-76-update-notes-october-20",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服 1.7.27.11，覆盖 PC、Xbox、PlayStation。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "ops",
+          "opswiki",
+          "eventguide",
+          "oct"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "经验部分是团队分工建议。时钟、奖励池和当日地图不当固定口径。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-expeditions-entry-without-fuel",
+      "title": "远征入口：白泉任务解锁领队，旧电池流程已移除",
+      "body": "从地图的远征入口选匹兹堡 The Pitt 或大西洋城 Atlantic City 的任务。第一次想自己当领队，先在白泉避难所走 Responders Reborn；跟随已解锁领队可先参加。2023 正式补丁已移除出发前给超核电池充能的每日任务要求。任务内看当前目标及可选目标，例如 Tax Evasion 和 The Most Sensational Game；记得与撤离人员互动完成结算。",
+      "category": "event",
+      "tags": [
+        "远征",
+        "Expeditions",
+        "白泉",
+        "Responders-Reborn",
+        "匹兹堡",
+        "大西洋城"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Once in a Blue Moon Update Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-once-in-a-blue-moon-update-notes-june-20-2023",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "已正式取消远征电池燃料任务。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 Expeditions",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_Expeditions",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；采用可读索引核对远征名称、邮票与目标关系。"
+        },
+        {
+          "title": "The Pitt Update Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-pitt-update-notes-september-13-2022",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对白泉避难所远征入门；旧燃料及领队次数规则由 2023 正式补丁覆盖。"
+        },
+        {
+          "title": "Atlantic City – Boardwalk Paradise is here!",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-atlantic-city-boardwalk-paradise-release",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引确认大西洋城正式内容。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "expblue",
+          "expwiki",
+          "pitt",
+          "atl"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "The Pitt 首发公告保留燃料及一次领队旧描述，采用 2023 年正式补丁替代。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-expeditions-optional-and-weekly-plan",
+      "title": "远征先做可选目标，周图纸与邮票分别结算",
+      "body": "远征完成主目标后可结算，完成额外目标通常能提高邮票收益。官方帮助说明完成全部副目标后每周可拿一份符合奖池条件、未学过的图纸；已经学完相关池就可能不再掉。撤离前检查可选目标；想买的图纸先查 Giuseppe，别假定商人每张图纸都可从周池随机开出。",
+      "category": "event",
+      "tags": [
+        "远征",
+        "可选目标",
+        "邮票",
+        "周图纸",
+        "Giuseppe",
+        "大西洋城"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 60,
+      "sources": [
+        {
+          "title": "Bethesda Support：Plans from Expeditions",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/57677/~/when-do-i-get-a-plan-from-doing-expeditions-in-fallout-76%3F",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "周图纸规则和池的示例；不据此推断每张邮票商品都掉落。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 Expeditions",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_Expeditions",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；采用可读索引核对远征名称、邮票与目标关系。"
+        },
+        {
+          "title": "Once in a Blue Moon Update Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-once-in-a-blue-moon-update-notes-june-20-2023",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "已正式取消远征电池燃料任务。"
+        },
+        {
+          "title": "Fallout Wiki：Giuseppe Della Ripa",
+          "url": "https://fallout.fandom.com/wiki/Giuseppe_Della_Ripa",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，确认白泉避难所的邮票商人。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "expplans",
+          "expwiki",
+          "expblue",
+          "gius"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "逐图首轮与后续邮票数量、掉落概率和异常结算未核定。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-raid-gleaming-depths-entry",
+      "title": "闪耀深处突袭：灰堆入口，按四人终局本准备",
+      "body": "在灰堆 Ash Heap 从地图定位 Gleaming Depths，进突袭实例后按任务推进。官方将其设计为四位高等级、有装备玩家的终局内容；四人是设计目标，所查资料未把 50 级写成入口硬门槛。共五个遭遇，有四星装备及改件奖励，另有 Vulcan 动力甲相关战利品。入场前确认各关分工、远程输出和防御补给。",
+      "category": "event",
+      "tags": [
+        "突袭",
+        "闪耀深处",
+        "Gleaming-Depths",
+        "灰堆",
+        "四星",
+        "Vulcan"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：Gleaming Depths",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/67938/",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "终局四人设计、五关、四星奖励方向。"
+        },
+        {
+          "title": "The Gleaming Depths Release Notes",
+          "url": "https://fallout.bethesda.net/en-NZ/news/fallout-76-the-gleaming-depths-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服首发记录。当前掉落比例不以旧首发公告断言。"
+        },
+        {
+          "title": "Fallout Wiki：Raid: Gleaming Depths",
+          "url": "https://fallout.fandom.com/wiki/Raid:_Gleaming_Depths",
+          "kind": "wiki",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "直接读到五阶段目标与机制；攻略中的效率及打法不视为官方承诺。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "raid",
+          "raidpatch",
+          "raidwiki",
+          "eventguide"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "四星掉落来自官方帮助；Vulcan 见首发补丁及 Wiki。此条不承诺逐关掉率。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-raid-gleaming-depths-five-stages",
+      "title": "闪耀深处五关目标：打盾、送油、断电、引怪、打蛇",
+      "body": "① EN06：处理护盾发生器后打本体，过热时进标记避难间。② 钻机：分工守机器与进矿道捡油，保住钻机并加满。③ Epsilon：打护盾装置让三名敌人可伤，阻止眼球机器人修复。④ 水晶区：把怪引到水晶旁，再打爆有限的水晶清怪。⑤ Ultracite Terror：用远程武器，躲酸液，避免靠平台边缘；尾巴出现并威胁平台时及时转火。按当场提示执行。",
+      "category": "event",
+      "tags": [
+        "闪耀深处",
+        "EN06",
+        "钻机",
+        "Epsilon",
+        "水晶",
+        "Ultracite-Terror"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：Gleaming Depths",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/67938/",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "终局四人设计、五关、四星奖励方向。"
+        },
+        {
+          "title": "Fallout Wiki：Raid: Gleaming Depths",
+          "url": "https://fallout.fandom.com/wiki/Raid:_Gleaming_Depths",
+          "kind": "wiki",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "直接读到五阶段目标与机制；攻略中的效率及打法不视为官方承诺。"
+        },
+        {
+          "title": "The Gleaming Depths Release Notes",
+          "url": "https://fallout.bethesda.net/en-NZ/news/fallout-76-the-gleaming-depths-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服首发记录。当前掉落比例不以旧首发公告断言。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "raid",
+          "raidwiki",
+          "raidpatch"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "阶段机制来自可读 Wiki 正文；优先级与分工是整理建议。未采用跳关、单刷或地形漏洞。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-infestation-map-and-loot",
+      "title": "围剿 Infestations：看烟雾和队友标点，首领有四星路线",
+      "body": "第25赛季上线的 Infestations 是地图上的高难遭遇。服务器提示和地图范围可帮找位置；第26赛季地图视觉改为烟雾式提示，队友的围剿可用于会合。入区后处理敌群和精英首领；这是四星装备来源之一。第26赛季 10 月补丁还改动了传奇币奖励。整理者建议：组队且确认遭遇当前状态再打。",
+      "category": "event",
+      "tags": [
+        "围剿",
+        "Infestations",
+        "地图烟雾",
+        "四星",
+        "传奇币",
+        "第26赛季"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第25赛季加入，核至第26赛季 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 45,
+      "sources": [
+        {
+          "title": "Infestations Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-infestations-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第25赛季正式公告；围剿内容首发规则。显示与结算参考后续正式补丁。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – July 21, 2026",
+          "url": "https://fallout.bethesda.net/en-EU/news/fallout-76-update-notes-july-21-2026",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服；围剿提示、部分公共活动和狂欢节调整。"
+        },
+        {
+          "title": "The Slasher Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-slasher-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第26赛季正式补丁 1.7.26.13；独特装备、传奇兑换、不屈边界、复刻赛季与原生主机版本。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – October 20, 2026",
+          "url": "https://fallout.bethesda.net/en-NZ/news/fallout-76-update-notes-october-20",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服 1.7.27.11，覆盖 PC、Xbox、PlayStation。"
+        }
+      ],
+      "topic": "events",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "inf",
+          "jul",
+          "slasher",
+          "oct"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "避免把六月首发的奖励说明扩大为每位参加者必得；结算资格与实际掉落以游戏提示为准。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-seasonal-fasnacht-march",
+      "title": "狂欢节 Fasnacht：准备游行，再护送机器人到篝火",
+      "body": "狂欢节开放时从地图加入 Helvetia 的 Fasnacht，和主持机器人交互，完成庆典准备，再护送游行机器人，最后按提示到篝火。保护更多游行机器人通常有利于结算；有面具和营地物件等主题奖励。活动周、开放频率及罕见面具池以对应公告与实际界面为准。",
+      "category": "event",
+      "tags": [
+        "Fasnacht",
+        "狂欢节",
+        "Helvetia",
+        "面具",
+        "游行",
+        "季节活动"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Fasnacht Returns to Fallout 76 with New Rewards",
+          "url": "https://fallout.bethesda.net/en-US/news/fasnacht-returns-to-fallout-76-with-new-rewards",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "历史公告只用于地点、主持人、游行护送流程；日期及奖池不当现行。"
+        },
+        {
+          "title": "Make the most of Fasnacht with Bratsnacht Weekend",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-bratsnacht-weekend-2026",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "2026年夏活动公告，校对玩法和当时活动的变更；不当11月档期。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – July 21, 2026",
+          "url": "https://fallout.bethesda.net/en-EU/news/fallout-76-update-notes-july-21-2026",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服；围剿提示、部分公共活动和狂欢节调整。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "fas",
+          "fas26",
+          "jul",
+          "eventguide"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "历史官方文章用于核对机制，未据此宣布 11 月开放。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-seasonal-mothman-pyres",
+      "title": "天蛾人春分或秋分庆典：按仪式阶段守火堆",
+      "body": "只在对应季节活动开放时加入 Mothman Equinox。跟随地图目标推进仪式，防守多个仪式火堆；官方帮助按成功防守火堆的表现区分奖励档。整理者建议：留意火堆标点并分守，别让所有队友追同一群敌人。是否开场及该轮具体掉落看本期公告。",
+      "category": "event",
+      "tags": [
+        "Mothman-Equinox",
+        "天蛾人",
+        "Point-Pleasant",
+        "火堆",
+        "季节活动"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：Mothman Equinox Rewards",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/54759/",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引确认火堆和防守表现影响结算；不引用固定奖池。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "moth",
+          "eventguide"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "未把历史档期、奖池或社区取消通知当成当前状态。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-seasonal-invaders-siphons",
+      "title": "天外入侵 Invaders from Beyond：依次拆三座脑波虹吸装置",
+      "body": "活动开放时在地图加入当前现场，按波次击败外星敌人并逐个摧毁三座脑波虹吸装置，赶在倒计时结束前完成。结算有经验、战利品，以及机会获得外星主题武器或营地图纸。整理者建议：波次结束后尽快转到下个装置，别追远处剩敌。场地、轮换和奖池看当期。",
+      "category": "event",
+      "tags": [
+        "天外入侵",
+        "Invaders-from-Beyond",
+        "外星人",
+        "脑波虹吸",
+        "图纸"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Inside the Vault – Invaders from Beyond Dev Dive",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-inside-the-vault-invaders-from-beyond-dev-dive",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "历史活动预告，不作当前开放或奖池依据。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "aliens",
+          "eventguide"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "历史官方活动预告用于机制；11 月是否临时返场未知。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-activity-rotation-exceptions",
+      "title": "活动轮换的例外：找 Vinny 开 Riding Shotgun，发电厂有自己的触发",
+      "body": "基础包已记录多数小活动要看地图轮换。Bethesda 的正式补丁明确列例外：Riding Shotgun 可以找 Vinny 对话启动，Powering Up 仍可在满足条件时靠近故障发电厂触发。想等普通活动时看地图；别用某个例外推断其他小活动也能手动开。检查界面和 NPC 是否实际提供入口。",
+      "category": "event",
+      "tags": [
+        "Riding-Shotgun",
+        "Vinny",
+        "Powering-Up",
+        "发电厂",
+        "活动轮换"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "The Backwoods 起，核至第26赛季",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "The Backwoods Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-backwoods-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第24赛季正式公告；活动轮换与大脚怪。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        }
+      ],
+      "topic": "events",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "back",
+          "eventguide"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-expedition-pitt-union-dues-objectives",
+      "title": "匹兹堡 Union Dues：给 Wicker 带钢锭和补给",
+      "body": "从远征菜单进入匹兹堡 Union Dues。主目标按任务标记推进，额外找 Wicker 要的钢锭和补给箱，按提示交还。目标物可能在支路，离开前查列表是否已完成。额外目标会影响邮票和周图纸资格；官方帮助要求周图纸那趟完成全部副目标。",
+      "category": "event",
+      "tags": [
+        "远征",
+        "匹兹堡",
+        "Union-Dues",
+        "Wicker",
+        "钢锭",
+        "补给箱"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "The Pitt Update Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-pitt-update-notes-september-13-2022",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对白泉避难所远征入门；旧燃料及领队次数规则由 2023 正式补丁覆盖。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 Expeditions",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_Expeditions",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；采用可读索引核对远征名称、邮票与目标关系。"
+        },
+        {
+          "title": "Fallout Wiki：Union Dues",
+          "url": "https://fallout.fandom.com/wiki/Union_Dues",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对钢锭和补给箱目标。"
+        },
+        {
+          "title": "Bethesda Support：Plans from Expeditions",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/57677/~/when-do-i-get-a-plan-from-doing-expeditions-in-fallout-76%3F",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "周图纸规则和池的示例；不据此推断每张邮票商品都掉落。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "pitt",
+          "expwiki",
+          "uniondues",
+          "expplans"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "只收录稳定目标类型，未抄固定拾取点。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-seasonal-meat-week-cookout",
+      "title": "肉食周分两类：Primal Cuts 打怪，Grahm’s Meat-Cook 办烤肉会",
+      "body": "肉食周开放时，Primal Cuts 可打活动怪取 Prime Meat；Grahm’s Meat-Cook 是独立的公共活动，完成场内工作推动烤肉会进度，也可按提示交 Prime Meat 换传奇币。成功会结算主题战利品，具体奖池、次数及下次开放以对应版本公告为准。",
+      "category": "event",
+      "tags": [
+        "Meat-Week",
+        "肉食周",
+        "Grahm",
+        "Primal-Cuts",
+        "优质肉",
+        "传奇币"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda：Fallout 76 Meat Week",
+          "url": "https://fallout.bethesda.net/en-EU/news/fallout-76-meat-week",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正文可读，核对两种活动；不使用历史开放时间推断当前轮次。"
+        },
+        {
+          "title": "Bethesda：A double helping of Meat Week",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-meat-week-2025",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正文可读，核对优质肉与传奇币结算；2025历史安排。"
+        },
+        {
+          "title": "Beginner, Mid-Level & High-Level Guide to Fallout 76’s Events",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-event-guide",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "公共事件等级、活动分类、变异例子、每日行动和突袭。页末泛指各级可尝试，不覆盖正文明确的公共事件10级开放说明。"
+        }
+      ],
+      "topic": "events",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "meatweek",
+          "meatweek25",
+          "eventguide"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "采用历史公告核实机制；没有从历史活动推断11月正在开放。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-combat-perk-reworks-checklist",
+      "title": "回归先查旧卡名：自动步枪、霰弹、重武器与近战",
+      "body": "2025年 Gone Fission 将旧 Commando 三卡改为 Center Masochist、Fast Fighter、Number Cruncher；旧 Shotgunner 三卡改为 Easy Target、Love the Spread、Shotgun Champ。效果条件也改了。C.A.M.P. Revamp 将 Tank Killer 改为通用远程穿甲，Stabilized 管重武器准度且动力甲中加倍。近战 Heavy Hitter（原 Master Slugger）补丁文本排除动力工具。查旧配卡时用当前卡面和英文名逐一比对。",
+      "category": "perk",
+      "tags": [
+        "旧配卡",
+        "Commando",
+        "Shotgunner",
+        "Stabilized",
+        "Tank-Killer",
+        "Heavy-Hitter"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "Gone Fission / C.A.M.P. Revamp 起，核至 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 45,
+      "sources": [
+        {
+          "title": "Gone Fission Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-gone-fission-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第21赛季正式公告；自动步枪、霰弹、肢体和 V.A.T.S. 卡改版。后续同名卡以较新来源优先。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第22赛季正式公告；重武器、近战、稳定射击、穿甲等。重击卡注明排除动力工具。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Combat Release Notes (FULL)",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-combat-release-notes-full",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "武器配件、瞄准与 AP 细节；与同日主公告用途不同。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – October 20, 2026",
+          "url": "https://fallout.bethesda.net/en-NZ/news/fallout-76-update-notes-october-20",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服 1.7.27.11，覆盖 PC、Xbox、PlayStation。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "fission",
+          "camp",
+          "campcombat",
+          "oct"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-ghoul-glow-feral-gates",
+      "title": "尸鬼先看辉光与野性，再决定枪械或近战",
+      "body": "50级人类做 Leap of Faith 可变成尸鬼。尸鬼没有人类饥渴条，辐射可累积辉光，药品可补回随时间下降的野性计量。高度野化有近战收益，也会重创枪械与 V.A.T.S. 命中。人类以辐射锁血配不屈的做法不能直接搬用；Overeater’s 依赖人类饥渴条。部分 NPC 对身份有反应，按剧情提示找 Jaye 的伪装。具体野性断点、身份切换条件看当前界面。",
+      "category": "mechanic",
+      "tags": [
+        "尸鬼",
+        "Ghoul",
+        "辉光",
+        "Glow",
+        "野性",
+        "Feral",
+        "Leap-of-Faith"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "Ghoul Within 起，核至第26赛季",
+      "status": "reference",
+      "reviewAfterDays": 60,
+      "sources": [
+        {
+          "title": "Ghoul Within Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-ghoul-within-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "尸鬼正式首发；转化、辉光、野性与身份限制。准确数值以当前卡面为准。"
+        },
+        {
+          "title": "Bethesda Support：Leap of Faith",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/69173/~/leap-of-faith---quest---fallout-76",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对50级和任务前提。"
+        },
+        {
+          "title": "Gone Fission Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-gone-fission-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第21赛季正式公告；自动步枪、霰弹、肢体和 V.A.T.S. 卡改版。后续同名卡以较新来源优先。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary armor effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，血量阈值用第26赛季公告。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "ghoul",
+          "ghoulquest",
+          "fission",
+          "armormods"
+        ],
+        "supplementalSourceIds": [],
+        "notes": ""
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-legendary-perk-milestones",
+      "title": "50级开第一张传奇卡，成型路线按槽位逐步加",
+      "body": "官方列出的传奇卡槽里程碑为 50、75、100、150、200、300 级。照配卡表之前先辨认哪些是传奇 SPECIAL 给的点数，哪些是普通卡。50 级是开始加传奇卡的节点，普通卡仍需要随升级选择和升阶。本文的日常路线不靠满传奇槽；遇到玩法瓶颈再选对应传奇卡。",
+      "category": "perk",
+      "tags": [
+        "传奇卡",
+        "槽位",
+        "50级",
+        "75级",
+        "100级",
+        "150级",
+        "200级",
+        "300级"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "reference",
+      "reviewAfterDays": 90,
+      "sources": [
+        {
+          "title": "Bethesda Support：Legendary Perks",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51786/~/legendary-perks---character-customization---fallout-76/1000",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对六个传奇卡槽等级。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 perks",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_perks",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；以可读索引核对卡名和部分解锁等级，过时效果让位于正式补丁。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "mechanism",
+      "verification": {
+        "state": "source-checked",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "legperk",
+          "perkwiki"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "基础包已有技能币和传奇卡升级；本条新增具体槽位里程碑。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      }
+    },
+    {
+      "id": "exp-human-full-auto-rifle-budget",
+      "title": "满血人类自动步枪：捡枪起步的非动力甲 V.A.T.S. 路线",
+      "body": "游戏事实｜旧 Commando 三卡已经改名和改效果；Center Masochist 有躯干条件，Tank Killer 是通用远程穿甲。修理工任务实物与图纸各有来源。\n等级和解锁｜25级后可用打卡机整理已有卡，约50级再补齐暴击核心。Wiki 列 Critical Savvy 44级、Better Criticals 47级开始可选；升阶需继续取卡。\n传奇卡｜无必需传奇卡。50级后可选 Legendary Luck 或 Agility，按暴击循环或卡槽缺口决定。\n核心卡｜感知 Tank Killer，选躯干时上 Center Masochist；敏捷 Action Boy/Girl；幸运 Critical Savvy、Better Criticals。\n替代卡｜缺暴击卡时先用 Ground Pounder 或现有通用输出卡，靠手瞄过渡。换靶忙可上 Gun Fu，常潜行可换 Sneak 或 Escape Artist；缺命中再考虑 Concentrated Fire。\n武器和词条｜有自动机匣的现成战斗步枪起步，之后换自动 The Fixer 或 Handmade。第一星可选 Anti-Armor 打硬目标或 Vampire’s 求容错；第三星 VATS Optimized 是升级项。按枪的实际口径备弹。\n护甲和词条｜等级合适的普通护甲混穿。想成型再换 Regs 的 Secret Service；人类能保持饥渴时可用 Overeater’s，之后补 AP 回复。无需整套同词条起步。\n变异、食物与补给｜变异和食物均可省。后期想加强暴击可选 Eagle Eyes 和草食路线的暴击食物；日常按需带补 AP 饮料。\n操作｜用躯干命中兑现 Center Masochist，弱点收益更大时切部位。成群敌人用短连发并主动放暴击，AP 掉光就手瞄或停火回 AP。\n优点和局限｜换目标快、操作易理解；长时间全自动耗弹，V.A.T.S. 在 AP 或命中不足时断档。\n资源成本｜低起步：捡枪、拆解同类解锁常用改件、补一种弹药。成型后才花金条和传奇改件。",
+      "category": "build",
+      "tags": [
+        "满血",
+        "人类",
+        "自动步枪",
+        "修理工",
+        "VATS",
+        "新手"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "Gone Fission Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-gone-fission-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第21赛季正式公告；自动步枪、霰弹、肢体和 V.A.T.S. 卡改版。后续同名卡以较新来源优先。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第22赛季正式公告；重武器、近战、稳定射击、穿甲等。重击卡注明排除动力工具。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Combat Release Notes (FULL)",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-combat-release-notes-full",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "武器配件、瞄准与 AP 细节；与同日主公告用途不同。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 perks",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_perks",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；以可读索引核对卡名和部分解锁等级，过时效果让位于正式补丁。"
+        },
+        {
+          "title": "Fallout Wiki：The Fixer",
+          "url": "https://fallout.fandom.com/wiki/The_Fixer",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；仅使用可读索引及相关活动资料。武器任务奖励和图纸奖励分开。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary ranged weapon effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_weapon_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，效果只定性引用。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary armor effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，血量阈值用第26赛季公告。"
+        },
+        {
+          "title": "Bethesda Support：Legendary Perks",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51786/~/legendary-perks---character-customization---fallout-76/1000",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对六个传奇卡槽等级。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "mechanics-checked-recommendation",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "fission",
+          "camp",
+          "campcombat",
+          "perkwiki",
+          "fixer",
+          "rangedmods",
+          "armormods",
+          "legperk",
+          "comm"
+        ],
+        "supplementalSourceIds": [
+          "comm"
+        ],
+        "notes": "攻略对最大化卡表和数值有自己的取舍，正文只采用可核对机制。未测试固定暴击频率。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      },
+      "buildDetails": {
+        "asOfVersion": "第26赛季正式服 1.7.27.11",
+        "platformScope": "正式服通用机制。PC、PlayStation 和 Xbox 的操作提示按本机键位。未逐平台实测。",
+        "facts": "旧 Commando 三卡已经改名和改效果；Center Masochist 有躯干条件，Tank Killer 是通用远程穿甲。修理工任务实物与图纸各有来源。",
+        "recommendation": {
+          "levels": "25级后可用打卡机整理已有卡，约50级再补齐暴击核心。Wiki 列 Critical Savvy 44级、Better Criticals 47级开始可选；升阶需继续取卡。",
+          "legendary": "无必需传奇卡。50级后可选 Legendary Luck 或 Agility，按暴击循环或卡槽缺口决定。",
+          "core": "感知 Tank Killer，选躯干时上 Center Masochist；敏捷 Action Boy/Girl；幸运 Critical Savvy、Better Criticals。",
+          "alternatives": "缺暴击卡时先用 Ground Pounder 或现有通用输出卡，靠手瞄过渡。换靶忙可上 Gun Fu，常潜行可换 Sneak 或 Escape Artist；缺命中再考虑 Concentrated Fire。",
+          "weapon": "有自动机匣的现成战斗步枪起步，之后换自动 The Fixer 或 Handmade。第一星可选 Anti-Armor 打硬目标或 Vampire’s 求容错；第三星 VATS Optimized 是升级项。按枪的实际口径备弹。",
+          "armor": "等级合适的普通护甲混穿。想成型再换 Regs 的 Secret Service；人类能保持饥渴时可用 Overeater’s，之后补 AP 回复。无需整套同词条起步。",
+          "buffs": "变异和食物均可省。后期想加强暴击可选 Eagle Eyes 和草食路线的暴击食物；日常按需带补 AP 饮料。",
+          "play": "用躯干命中兑现 Center Masochist，弱点收益更大时切部位。成群敌人用短连发并主动放暴击，AP 掉光就手瞄或停火回 AP。",
+          "tradeoffs": "换目标快、操作易理解；长时间全自动耗弹，V.A.T.S. 在 AP 或命中不足时断档。",
+          "cost": "低起步：捡枪、拆解同类解锁常用改件、补一种弹药。成型后才花金条和传奇改件。"
+        },
+        "limitations": "攻略对最大化卡表和数值有自己的取舍，正文只采用可核对机制。未测试固定暴击频率。"
+      }
+    },
+    {
+      "id": "exp-human-lowhp-auto-rifle-vats",
+      "title": "低血人类自动步枪：不屈、书呆子之怒与暴击",
+      "body": "游戏事实｜第26赛季把 Unyielding 的满效边界纳入正好20%生命值。Nerd Rage! 有自己的触发条件；以卡面/图标看是否生效，不能用不屈边界替它推断。\n等级和解锁｜建议50级后并已攒到几件不屈再转；50级只代表基础配点和首个传奇槽，不代表卡阶齐全。\n传奇卡｜无硬性传奇卡。后期按实际幸运与配卡容量选 Legendary Luck 或 Agility，别直接照搬六槽配点。\n核心卡｜Nerd Rage!；Tank Killer；Critical Savvy、Better Criticals；配 Action Boy/Girl 和至少一张应对挨打的卡。\n替代卡｜Center Masochist 用于躯干，改打肢体可考虑 Tormentor；容易死时优先 Blocker 或 Fireproof 等常用防护，掉 AP 则留恢复卡。\n武器和词条｜自动 Fixer 或 Handmade。Bloodied 是低血伤害选择；Anti-Armor 可跨血量使用，Vampire’s 可作保命副枪。按需选暴击伤害/命中和 V.A.T.S. 减 AP 词条。\n护甲和词条｜非动力甲的 Unyielding，先穿混搭件积累效果，后换 Secret Service 等底材，补 AP 恢复或减重。高辐射场景准备专用防辐射装备并预期换装后配卡手感变化。\n变异、食物与补给｜按需要选 Adrenal Reaction、Eagle Eyes；草食加暴击食物为可选。用辐射维持可用血线，备补血和调辐射手段。\n操作｜先确认不屈和低血卡各自生效，再进入 V.A.T.S. 循环。遇净化器坏掉或强持续伤害时，先离开危险区处理辐射和血线。\n优点和局限｜不屈可帮助 SPECIAL 和暴击循环；低可用生命导致容错低，复活或环境辐射后要重调。\n资源成本｜中高。先攒多件不屈，再投入底材图纸、改件和血线维护，普通全血套可作为切换装。",
+      "category": "build",
+      "tags": [
+        "低血",
+        "Bloodied",
+        "不屈",
+        "人类",
+        "自动步枪",
+        "VATS",
+        "非动力甲"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "The Slasher Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-slasher-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第26赛季正式补丁 1.7.26.13；独特装备、传奇兑换、不屈边界、复刻赛季与原生主机版本。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – October 20, 2026",
+          "url": "https://fallout.bethesda.net/en-NZ/news/fallout-76-update-notes-october-20",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服 1.7.27.11，覆盖 PC、Xbox、PlayStation。"
+        },
+        {
+          "title": "Gone Fission Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-gone-fission-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第21赛季正式公告；自动步枪、霰弹、肢体和 V.A.T.S. 卡改版。后续同名卡以较新来源优先。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第22赛季正式公告；重武器、近战、稳定射击、穿甲等。重击卡注明排除动力工具。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary armor effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，血量阈值用第26赛季公告。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary ranged weapon effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_weapon_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，效果只定性引用。"
+        },
+        {
+          "title": "Fallout Wiki：Nerd Rage!",
+          "url": "https://fallout.fandom.com/wiki/Nerd_Rage%21_%28Fallout_76%29",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引确认人类低血联动与 AP 恢复。"
+        },
+        {
+          "title": "Fallout Wiki：The Fixer",
+          "url": "https://fallout.fandom.com/wiki/The_Fixer",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；仅使用可读索引及相关活动资料。武器任务奖励和图纸奖励分开。"
+        },
+        {
+          "title": "Bethesda Support：Legendary Perks",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51786/~/legendary-perks---character-customization---fallout-76/1000",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对六个传奇卡槽等级。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "mechanics-checked-recommendation",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "slasher",
+          "oct",
+          "fission",
+          "camp",
+          "armormods",
+          "rangedmods",
+          "nerd",
+          "fixer",
+          "legperk",
+          "blood",
+          "comm"
+        ],
+        "supplementalSourceIds": [
+          "blood",
+          "comm"
+        ],
+        "notes": "不提供暴击连发的固定幸运阈值；配件、卡阶和实际幸运均会影响循环。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      },
+      "buildDetails": {
+        "asOfVersion": "第26赛季正式服 1.7.27.11",
+        "platformScope": "正式服通用机制。PC、PlayStation 和 Xbox 的操作提示按本机键位。未逐平台实测。",
+        "facts": "第26赛季把 Unyielding 的满效边界纳入正好20%生命值。Nerd Rage! 有自己的触发条件；以卡面/图标看是否生效，不能用不屈边界替它推断。",
+        "recommendation": {
+          "levels": "建议50级后并已攒到几件不屈再转；50级只代表基础配点和首个传奇槽，不代表卡阶齐全。",
+          "legendary": "无硬性传奇卡。后期按实际幸运与配卡容量选 Legendary Luck 或 Agility，别直接照搬六槽配点。",
+          "core": "Nerd Rage!；Tank Killer；Critical Savvy、Better Criticals；配 Action Boy/Girl 和至少一张应对挨打的卡。",
+          "alternatives": "Center Masochist 用于躯干，改打肢体可考虑 Tormentor；容易死时优先 Blocker 或 Fireproof 等常用防护，掉 AP 则留恢复卡。",
+          "weapon": "自动 Fixer 或 Handmade。Bloodied 是低血伤害选择；Anti-Armor 可跨血量使用，Vampire’s 可作保命副枪。按需选暴击伤害/命中和 V.A.T.S. 减 AP 词条。",
+          "armor": "非动力甲的 Unyielding，先穿混搭件积累效果，后换 Secret Service 等底材，补 AP 恢复或减重。高辐射场景准备专用防辐射装备并预期换装后配卡手感变化。",
+          "buffs": "按需要选 Adrenal Reaction、Eagle Eyes；草食加暴击食物为可选。用辐射维持可用血线，备补血和调辐射手段。",
+          "play": "先确认不屈和低血卡各自生效，再进入 V.A.T.S. 循环。遇净化器坏掉或强持续伤害时，先离开危险区处理辐射和血线。",
+          "tradeoffs": "不屈可帮助 SPECIAL 和暴击循环；低可用生命导致容错低，复活或环境辐射后要重调。",
+          "cost": "中高。先攒多件不屈，再投入底材图纸、改件和血线维护，普通全血套可作为切换装。"
+        },
+        "limitations": "不提供暴击连发的固定幸运阈值；配件、卡阶和实际幸运均会影响循环。"
+      }
+    },
+    {
+      "id": "exp-human-full-pa-heavy-budget",
+      "title": "满血人类动力甲重武器：25级挖掘机，后转 .50 机枪",
+      "body": "游戏事实｜Miner Miracles 有25级前置；Stabilized 是重武器准度，穿动力甲效果加倍，远程穿甲来自 Tank Killer 等。Bullet Storm 与弹药支出、换弹和切枪关联。\n等级和解锁｜25级开始做挖掘机；重武器按装备显示等级选，约50级再补完整重武器核心。Final Word 随 Beckett 盟友任务线解锁。\n传奇卡｜无必需传奇卡。首槽可按场景考虑 Electric Absorption（对适用的能量攻击），后期再考虑 Legendary Strength。\n核心卡｜Tank Killer、Stabilized、Bullet Storm；想维持持续射击补 Lock and Load。受伤多先留 Blocker 或 Bullet Shield。\n替代卡｜低等级可先用已有重枪和伤害/防护卡，等 Bullet Storm 解锁。常打短战可少放叠层卡；弹药超重用 Bandolier（.50 等弹道弹）作替换。\n武器和词条｜有弹药的重武器过渡；成型用 .50 Cal Machine Gun，包括 Beckett 路线的 Final Word。Anti-Armor、Vampire’s 分别偏穿甲或续航，连射配件与词条依当期检查页核对。\n护甲和词条｜全套挖掘机起步，备融合核心。对机器人可临时拼 Troubleshooter’s，常态人类可选 Overeater’s；不必先为另一整套高价动力甲攒货币。\n变异、食物与补给｜不要求变异或增伤食物。若穿 Overeater’s 就维持饥渴条；备治疗针和融合核心。\n操作｜以手瞄持续射击为主，别频繁换枪或提前换弹浪费叠层；实战按机制停火或进掩体优先。\n优点和局限｜容错、负重和持续火力较好；需要常备弹药、核心，低级卡和旧攻略数值容易让人误配。\n资源成本｜中。挖掘机的制作材料、核心和 .50 弹是主要日常成本；任务枪可降低改件投入。",
+      "category": "build",
+      "tags": [
+        "满血",
+        "人类",
+        "动力甲",
+        "重武器",
+        "挖掘机",
+        "50机枪",
+        "Final-Word"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "Bethesda Support：Miner Miracles",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/45124/~/miner-miracles---side-quest---fallout-76",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "挖掘机动力甲任务，核实25级。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第22赛季正式公告；重武器、近战、稳定射击、穿甲等。重击卡注明排除动力工具。"
+        },
+        {
+          "title": "Gone Fission Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-gone-fission-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第21赛季正式公告；自动步枪、霰弹、肢体和 V.A.T.S. 卡改版。后续同名卡以较新来源优先。"
+        },
+        {
+          "title": "Fallout Wiki：Final Word",
+          "url": "https://fallout.fandom.com/wiki/Final_Word",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，核对 Beckett 路线和武器类型；旧固定词条需对照新补丁。"
+        },
+        {
+          "title": "The Slasher Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-slasher-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第26赛季正式补丁 1.7.26.13；独特装备、传奇兑换、不屈边界、复刻赛季与原生主机版本。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary ranged weapon effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_weapon_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，效果只定性引用。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary armor effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，血量阈值用第26赛季公告。"
+        },
+        {
+          "title": "Bethesda Support：Legendary Perks",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51786/~/legendary-perks---character-customization---fallout-76/1000",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对六个传奇卡槽等级。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "mechanics-checked-recommendation",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "exc",
+          "camp",
+          "fission",
+          "finalword",
+          "slasher",
+          "rangedmods",
+          "armormods",
+          "legperk",
+          "nkheavy"
+        ],
+        "supplementalSourceIds": [
+          "nkheavy"
+        ],
+        "notes": "Final Word 特效与传奇星级以检查页为准；独特装备在第26赛季已开放改装。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      },
+      "buildDetails": {
+        "asOfVersion": "第26赛季正式服 1.7.27.11",
+        "platformScope": "正式服通用机制。PC、PlayStation 和 Xbox 的操作提示按本机键位。未逐平台实测。",
+        "facts": "Miner Miracles 有25级前置；Stabilized 是重武器准度，穿动力甲效果加倍，远程穿甲来自 Tank Killer 等。Bullet Storm 与弹药支出、换弹和切枪关联。",
+        "recommendation": {
+          "levels": "25级开始做挖掘机；重武器按装备显示等级选，约50级再补完整重武器核心。Final Word 随 Beckett 盟友任务线解锁。",
+          "legendary": "无必需传奇卡。首槽可按场景考虑 Electric Absorption（对适用的能量攻击），后期再考虑 Legendary Strength。",
+          "core": "Tank Killer、Stabilized、Bullet Storm；想维持持续射击补 Lock and Load。受伤多先留 Blocker 或 Bullet Shield。",
+          "alternatives": "低等级可先用已有重枪和伤害/防护卡，等 Bullet Storm 解锁。常打短战可少放叠层卡；弹药超重用 Bandolier（.50 等弹道弹）作替换。",
+          "weapon": "有弹药的重武器过渡；成型用 .50 Cal Machine Gun，包括 Beckett 路线的 Final Word。Anti-Armor、Vampire’s 分别偏穿甲或续航，连射配件与词条依当期检查页核对。",
+          "armor": "全套挖掘机起步，备融合核心。对机器人可临时拼 Troubleshooter’s，常态人类可选 Overeater’s；不必先为另一整套高价动力甲攒货币。",
+          "buffs": "不要求变异或增伤食物。若穿 Overeater’s 就维持饥渴条；备治疗针和融合核心。",
+          "play": "以手瞄持续射击为主，别频繁换枪或提前换弹浪费叠层；实战按机制停火或进掩体优先。",
+          "tradeoffs": "容错、负重和持续火力较好；需要常备弹药、核心，低级卡和旧攻略数值容易让人误配。",
+          "cost": "中。挖掘机的制作材料、核心和 .50 弹是主要日常成本；任务枪可降低改件投入。"
+        },
+        "limitations": "Final Word 特效与传奇星级以检查页为准；独特装备在第26赛季已开放改装。"
+      }
+    },
+    {
+      "id": "exp-ghoul-nonpa-heavy-vats",
+      "title": "非野化尸鬼重武器：非动力甲 V.A.T.S. 成型路线",
+      "body": "游戏事实｜尸鬼野性过低时会妨碍枪械和 V.A.T.S. 命中；辐射用于辉光。Stabilized 离开动力甲仍有重武器准度效果。Overeater’s 要看饥渴条，尸鬼另选护甲词条。\n等级和解锁｜50级可做转化任务；先有可供弹的重枪和通用卡，再加暴击及尸鬼卡。建议75级后逐步完善，属于投入建议。\n传奇卡｜路线无硬性传奇卡。需要 V.A.T.S. 卡位可选 Legendary Agility/Luck，突袭按关卡配耐毒或其他生存能力。\n核心卡｜Bullet Storm 与 Lock and Load；Tank Killer；Better Criticals、Critical Savvy；有辉光时用 Action Ghoul 改善 AP 恢复。\n替代卡｜命中不稳时用 Stabilized 或换手瞄，腾出暴击卡位给防护；活不下来先装防护再补叠层。需要保护或承担机制时用另一套动力甲方案。\n武器和词条｜以 .50 机枪等可持续射击的弹仓重武器起步；成型可选 Anti-Armor，保命副武器选 Vampire’s，V.A.T.S. 路线可找 VATS Optimized。以单次 AP 和弹药可负担程度定底材。\n护甲和词条｜用 Secret Service 等普通护甲，按遭遇选针对种族减伤或 AP 回复、Poisoner’s。机器人首领可考虑 Troubleshooter’s。词条优先级按实际承伤。\n变异、食物与补给｜药品维持野性计量、辐射补辉光是管理成本；增伤食物和变异可选。按关带耐毒补给，别预设特定食物或血清切换。\n操作｜入场前确认野性和辉光。先稳定命中，蓄 Bullet Storm，战斗中留出 AP 给移动和暴击；该转火或躲机制时优先处理机制。\n优点和局限｜装备词条选择灵活；非动力甲抗压与重枪 AP、弹药管理要求较高，不能把整套视作所有突袭关通用。\n资源成本｜高。除重武器、弹药和护甲外，还有耗药、辉光准备和 V.A.T.S. 词条。未满足条件时可先玩手瞄版。",
+      "category": "build",
+      "tags": [
+        "尸鬼",
+        "非动力甲",
+        "重武器",
+        "VATS",
+        "Bullet-Storm",
+        "Raid"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "Ghoul Within Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-ghoul-within-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "尸鬼正式首发；转化、辉光、野性与身份限制。准确数值以当前卡面为准。"
+        },
+        {
+          "title": "Bethesda Support：Leap of Faith",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/69173/~/leap-of-faith---quest---fallout-76",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对50级和任务前提。"
+        },
+        {
+          "title": "Gone Fission Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-gone-fission-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第21赛季正式公告；自动步枪、霰弹、肢体和 V.A.T.S. 卡改版。后续同名卡以较新来源优先。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第22赛季正式公告；重武器、近战、稳定射击、穿甲等。重击卡注明排除动力工具。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 perks",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_perks",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；以可读索引核对卡名和部分解锁等级，过时效果让位于正式补丁。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary ranged weapon effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_weapon_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，效果只定性引用。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary armor effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，血量阈值用第26赛季公告。"
+        },
+        {
+          "title": "Fallout Wiki：Action Ghoul",
+          "url": "https://fallout.fandom.com/wiki/Action_Ghoul",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对50级、尸鬼与辉光条件。"
+        },
+        {
+          "title": "Bethesda Support：Legendary Perks",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51786/~/legendary-perks---character-customization---fallout-76/1000",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对六个传奇卡槽等级。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – October 20, 2026",
+          "url": "https://fallout.bethesda.net/en-NZ/news/fallout-76-update-notes-october-20",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服 1.7.27.11，覆盖 PC、Xbox、PlayStation。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "mechanics-checked-recommendation",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "ghoul",
+          "ghoulquest",
+          "fission",
+          "camp",
+          "perkwiki",
+          "rangedmods",
+          "armormods",
+          "actionghoul",
+          "legperk",
+          "oct",
+          "nkheavy",
+          "ndghoul"
+        ],
+        "supplementalSourceIds": [
+          "nkheavy",
+          "ndghoul"
+        ],
+        "notes": "引用的 2026-10-19 玩家实例会跨关换甲；本文只取其中思路，并无逐关无伤或独自通关承诺。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      },
+      "buildDetails": {
+        "asOfVersion": "第26赛季正式服 1.7.27.11",
+        "platformScope": "正式服通用机制。PC、PlayStation 和 Xbox 的操作提示按本机键位。未逐平台实测。",
+        "facts": "尸鬼野性过低时会妨碍枪械和 V.A.T.S. 命中；辐射用于辉光。Stabilized 离开动力甲仍有重武器准度效果。Overeater’s 要看饥渴条，尸鬼另选护甲词条。",
+        "recommendation": {
+          "levels": "50级可做转化任务；先有可供弹的重枪和通用卡，再加暴击及尸鬼卡。建议75级后逐步完善，属于投入建议。",
+          "legendary": "路线无硬性传奇卡。需要 V.A.T.S. 卡位可选 Legendary Agility/Luck，突袭按关卡配耐毒或其他生存能力。",
+          "core": "Bullet Storm 与 Lock and Load；Tank Killer；Better Criticals、Critical Savvy；有辉光时用 Action Ghoul 改善 AP 恢复。",
+          "alternatives": "命中不稳时用 Stabilized 或换手瞄，腾出暴击卡位给防护；活不下来先装防护再补叠层。需要保护或承担机制时用另一套动力甲方案。",
+          "weapon": "以 .50 机枪等可持续射击的弹仓重武器起步；成型可选 Anti-Armor，保命副武器选 Vampire’s，V.A.T.S. 路线可找 VATS Optimized。以单次 AP 和弹药可负担程度定底材。",
+          "armor": "用 Secret Service 等普通护甲，按遭遇选针对种族减伤或 AP 回复、Poisoner’s。机器人首领可考虑 Troubleshooter’s。词条优先级按实际承伤。",
+          "buffs": "药品维持野性计量、辐射补辉光是管理成本；增伤食物和变异可选。按关带耐毒补给，别预设特定食物或血清切换。",
+          "play": "入场前确认野性和辉光。先稳定命中，蓄 Bullet Storm，战斗中留出 AP 给移动和暴击；该转火或躲机制时优先处理机制。",
+          "tradeoffs": "装备词条选择灵活；非动力甲抗压与重枪 AP、弹药管理要求较高，不能把整套视作所有突袭关通用。",
+          "cost": "高。除重武器、弹药和护甲外，还有耗药、辉光准备和 V.A.T.S. 词条。未满足条件时可先玩手瞄版。"
+        },
+        "limitations": "引用的 2026-10-19 玩家实例会跨关换甲；本文只取其中思路，并无逐关无伤或独自通关承诺。"
+      }
+    },
+    {
+      "id": "exp-human-full-shotgun-budget",
+      "title": "满血人类平价霰弹：战斗霰弹先打肢体",
+      "body": "游戏事实｜霰弹旧三伤害卡已改版。Easy Target 针对已致残敌人；Scattershot 有肢体伤害扩散；Skeet Shooter 改善小型枪械的射击精度/散布。\n等级和解锁｜捡到角色能装备的霰弹即可开始，约25级后调点，约50级补齐卡。下列完整组合不保证早期就能抽齐。\n传奇卡｜无必需传奇卡；先用普通卡。\n核心卡｜Enforcer、Scattershot 帮忙打残，Easy Target 吃致残收益。手瞄不稳加 Skeet Shooter。\n替代卡｜遇硬目标补 Tank Killer；多弹丸武器需要射程可试 Love the Spread；V.A.T.S. 打法成形后再补幸运暴击卡。\n武器和词条｜战斗霰弹或双管霰弹先用现成品和普通改件；Anti-Armor 打硬目标或 Vampire’s 提高近身容错，传奇词条从能用的开始。\n护甲和词条｜普通护甲混穿；星级合适的减伤件或人类 Overeater’s 为后续投入。近距离可用 Blocker 提高容错。\n变异、食物与补给｜不需要变异和增伤食物。带霰弹、治疗针即可开始。\n操作｜先集中打腿或其他容易致残的部位，再输出；远处目标先走近或用副武器。\n优点和局限｜普通枪和弹即可入门，能协助控场；有效距离短，面对不易致残的目标收益下降。\n资源成本｜低。主要是常规弹、基础配件和维修。暂时不必买冷肩或高斯霰弹图纸。",
+      "category": "build",
+      "tags": [
+        "满血",
+        "人类",
+        "非动力甲",
+        "霰弹",
+        "战斗霰弹",
+        "打残",
+        "新手"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "Gone Fission Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-gone-fission-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第21赛季正式公告；自动步枪、霰弹、肢体和 V.A.T.S. 卡改版。后续同名卡以较新来源优先。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第22赛季正式公告；重武器、近战、稳定射击、穿甲等。重击卡注明排除动力工具。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 perks",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_perks",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；以可读索引核对卡名和部分解锁等级，过时效果让位于正式补丁。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary ranged weapon effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_weapon_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，效果只定性引用。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary armor effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，血量阈值用第26赛季公告。"
+        },
+        {
+          "title": "Bethesda Support：Legendary Perks",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51786/~/legendary-perks---character-customization---fallout-76/1000",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对六个传奇卡槽等级。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "mechanics-checked-recommendation",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "fission",
+          "camp",
+          "perkwiki",
+          "rangedmods",
+          "armormods",
+          "legperk"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "以第26赛季可核查的卡文组织，未对不同弹丸数和距离做数值测试。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      },
+      "buildDetails": {
+        "asOfVersion": "第26赛季正式服 1.7.27.11",
+        "platformScope": "正式服通用机制。PC、PlayStation 和 Xbox 的操作提示按本机键位。未逐平台实测。",
+        "facts": "霰弹旧三伤害卡已改版。Easy Target 针对已致残敌人；Scattershot 有肢体伤害扩散；Skeet Shooter 改善小型枪械的射击精度/散布。",
+        "recommendation": {
+          "levels": "捡到角色能装备的霰弹即可开始，约25级后调点，约50级补齐卡。下列完整组合不保证早期就能抽齐。",
+          "legendary": "无必需传奇卡；先用普通卡。",
+          "core": "Enforcer、Scattershot 帮忙打残，Easy Target 吃致残收益。手瞄不稳加 Skeet Shooter。",
+          "alternatives": "遇硬目标补 Tank Killer；多弹丸武器需要射程可试 Love the Spread；V.A.T.S. 打法成形后再补幸运暴击卡。",
+          "weapon": "战斗霰弹或双管霰弹先用现成品和普通改件；Anti-Armor 打硬目标或 Vampire’s 提高近身容错，传奇词条从能用的开始。",
+          "armor": "普通护甲混穿；星级合适的减伤件或人类 Overeater’s 为后续投入。近距离可用 Blocker 提高容错。",
+          "buffs": "不需要变异和增伤食物。带霰弹、治疗针即可开始。",
+          "play": "先集中打腿或其他容易致残的部位，再输出；远处目标先走近或用副武器。",
+          "tradeoffs": "普通枪和弹即可入门，能协助控场；有效距离短，面对不易致残的目标收益下降。",
+          "cost": "低。主要是常规弹、基础配件和维修。暂时不必买冷肩或高斯霰弹图纸。"
+        },
+        "limitations": "以第26赛季可核查的卡文组织，未对不同弹丸数和距离做数值测试。"
+      }
+    },
+    {
+      "id": "exp-human-full-cold-shoulder-control",
+      "title": "满血冷肩霰弹：近距控场，邮票投入后的升级路线",
+      "body": "游戏事实｜冷肩是独特双管霰弹，含冰冻控场特性；邮票图纸有常规获取来源。第26赛季的独特装备改装规则要以该武器检查页显示的可改位置为准。\n等级和解锁｜以50级角色、已解锁常用控场卡作为推荐起点；按工台显示的武器等级制作。\n传奇卡｜无硬性传奇卡。要增加卡容量可用 Legendary Luck；防护卡先用普通卡补。\n核心卡｜Enforcer、Scattershot、Easy Target；按卡面与武器弹丸条件补 Shotgun Champ。Tank Killer 作通用远程穿甲。\n替代卡｜命中不稳先上 Skeet Shooter 或试 Love the Spread；想用 V.A.T.S. 才换入 Critical Savvy、Better Criticals，别强行两头同时堆满。\n武器和词条｜冷肩保留其可见独特控场效果优先。升级前查看当前三颗传奇星和可替换项；备用霰弹可用 Anti-Armor 或 Vampire’s。\n护甲和词条｜满血普通护甲，备耐伤词条；可选 Secret Service 或已有优质混搭。人类常态补满饥渴时可用 Overeater’s。\n变异、食物与补给｜无强制变异或食物。V.A.T.S. 版可选 AP/暴击补给；手瞄版常备霰弹和治疗。\n操作｜靠近有效射程，先按敌人可否减速/致残判断控场，再按需要换输出部位。需要打远距离目标时备远程武器。\n优点和局限｜霰弹队伍控场用途明确；射程和首领抗性限制发挥。冰冻不等于每个首领都能被锁住。\n资源成本｜中高。常规邮票报价资料为500，另有制作和补弹；同资源还可兑换其他远征图纸。",
+      "category": "build",
+      "tags": [
+        "冷肩",
+        "Cold-Shoulder",
+        "霰弹",
+        "满血",
+        "人类",
+        "控场",
+        "邮票"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Cold Shoulder",
+          "url": "https://fallout.fandom.com/wiki/Cold_Shoulder",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，结合商人页；不根据历史资料推断当前原子商店售卖。"
+        },
+        {
+          "title": "Fallout Wiki：Giuseppe Della Ripa",
+          "url": "https://fallout.fandom.com/wiki/Giuseppe_Della_Ripa",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，确认白泉避难所的邮票商人。"
+        },
+        {
+          "title": "The Slasher Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-the-slasher-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第26赛季正式补丁 1.7.26.13；独特装备、传奇兑换、不屈边界、复刻赛季与原生主机版本。"
+        },
+        {
+          "title": "Fallout 76 Update Notes – October 20, 2026",
+          "url": "https://fallout.bethesda.net/en-NZ/news/fallout-76-update-notes-october-20",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "正式服 1.7.27.11，覆盖 PC、Xbox、PlayStation。"
+        },
+        {
+          "title": "Gone Fission Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-gone-fission-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第21赛季正式公告；自动步枪、霰弹、肢体和 V.A.T.S. 卡改版。后续同名卡以较新来源优先。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第22赛季正式公告；重武器、近战、稳定射击、穿甲等。重击卡注明排除动力工具。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 perks",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_perks",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；以可读索引核对卡名和部分解锁等级，过时效果让位于正式补丁。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary ranged weapon effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_weapon_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，效果只定性引用。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary armor effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，血量阈值用第26赛季公告。"
+        },
+        {
+          "title": "Bethesda Support：Legendary Perks",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51786/~/legendary-perks---character-customization---fallout-76/1000",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对六个传奇卡槽等级。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "mechanics-checked-recommendation",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "cold",
+          "gius",
+          "slasher",
+          "oct",
+          "fission",
+          "camp",
+          "perkwiki",
+          "rangedmods",
+          "armormods",
+          "legperk"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "冷肩图纸的原子商店渠道未核到当前库存，本文按常规邮票路线预算。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      },
+      "buildDetails": {
+        "asOfVersion": "第26赛季正式服 1.7.27.11",
+        "platformScope": "正式服通用机制。PC、PlayStation 和 Xbox 的操作提示按本机键位。未逐平台实测。",
+        "facts": "冷肩是独特双管霰弹，含冰冻控场特性；邮票图纸有常规获取来源。第26赛季的独特装备改装规则要以该武器检查页显示的可改位置为准。",
+        "recommendation": {
+          "levels": "以50级角色、已解锁常用控场卡作为推荐起点；按工台显示的武器等级制作。",
+          "legendary": "无硬性传奇卡。要增加卡容量可用 Legendary Luck；防护卡先用普通卡补。",
+          "core": "Enforcer、Scattershot、Easy Target；按卡面与武器弹丸条件补 Shotgun Champ。Tank Killer 作通用远程穿甲。",
+          "alternatives": "命中不稳先上 Skeet Shooter 或试 Love the Spread；想用 V.A.T.S. 才换入 Critical Savvy、Better Criticals，别强行两头同时堆满。",
+          "weapon": "冷肩保留其可见独特控场效果优先。升级前查看当前三颗传奇星和可替换项；备用霰弹可用 Anti-Armor 或 Vampire’s。",
+          "armor": "满血普通护甲，备耐伤词条；可选 Secret Service 或已有优质混搭。人类常态补满饥渴时可用 Overeater’s。",
+          "buffs": "无强制变异或食物。V.A.T.S. 版可选 AP/暴击补给；手瞄版常备霰弹和治疗。",
+          "play": "靠近有效射程，先按敌人可否减速/致残判断控场，再按需要换输出部位。需要打远距离目标时备远程武器。",
+          "tradeoffs": "霰弹队伍控场用途明确；射程和首领抗性限制发挥。冰冻不等于每个首领都能被锁住。",
+          "cost": "中高。常规邮票报价资料为500，另有制作和补弹；同资源还可兑换其他远征图纸。"
+        },
+        "limitations": "冷肩图纸的原子商店渠道未核到当前库存，本文按常规邮票路线预算。"
+      }
+    },
+    {
+      "id": "exp-human-full-chainsaw-budget",
+      "title": "满血人类电锯：低成本双手动力近战",
+      "body": "游戏事实｜电锯属双手动力近战；有双锯片等改件，持续攻击耗 AP。官方新版 Heavy Hitter 卡文字排除动力工具，不把旧三张 Slugger 当平铺增伤。\n等级和解锁｜Wiki 列电锯有20级装备档；约25级后调整卡组，50级补防御和装备词条。\n传奇卡｜无必需传奇卡；满配后可选 Legendary Strength，先留普通卡位给生存。\n核心卡｜Incisor、Blocker。AP 吃紧补 Action Boy/Girl；维修压力大考虑 Makeshift Warrior。\n替代卡｜常遇已致残目标再试 Slugger；耐久尚可时把维修卡位转防护。换非动力重击武器时再看 Heavy Hitter。\n武器和词条｜普通电锯先用，改双锯片，按能获取的改装考虑火焰。Vampire’s 用于续航，后续可看耐久词条。近战原地无法接敌时备远程枪。\n护甲和词条｜人类满血非动力甲混搭，先选能抗近身伤害的件，后续可换 Overeater’s 或按敌种减伤；动力甲可以作为危险区域备用。\n变异、食物与补给｜无必需变异或食物。想进一步增伤可走肉食与近战菜，优先解决 AP、命中位置和耐久。\n操作｜贴近后连续切割，预留 AP 用于重新接敌或撤退；留意维修状态。强制只能近战终结的词缀可准备电锯作备选。\n优点和局限｜无需子弹、容易用现成武器入门；接敌距离短，易吃范围伤害且耗 AP、耐久。\n资源成本｜低到中。地图拾取与改件、维修材料是主要开销；不用先花500邮票买自动斧。",
+      "category": "build",
+      "tags": [
+        "电锯",
+        "Chainsaw",
+        "近战",
+        "人类",
+        "满血",
+        "非动力甲",
+        "新手"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "Fallout Wiki：Chainsaw (Fallout 76)",
+          "url": "https://fallout.fandom.com/wiki/Chainsaw_%28Fallout_76%29",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，核对双手动力近战、等级与改装。"
+        },
+        {
+          "title": "Fallout Wiki：Incisor",
+          "url": "https://fallout.fandom.com/wiki/Incisor",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，核对近战穿甲。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第22赛季正式公告；重武器、近战、稳定射击、穿甲等。重击卡注明排除动力工具。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 perks",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_perks",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；以可读索引核对卡名和部分解锁等级，过时效果让位于正式补丁。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary armor effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，血量阈值用第26赛季公告。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary melee effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_melee_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对 Vampire’s 与近战词条类别，不断言当前攻速或重击交互。"
+        },
+        {
+          "title": "Bethesda Support：Legendary Perks",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51786/~/legendary-perks---character-customization---fallout-76/1000",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对六个传奇卡槽等级。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "mechanics-checked-recommendation",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "saw",
+          "incisor",
+          "camp",
+          "perkwiki",
+          "armormods",
+          "meleemods",
+          "legperk"
+        ],
+        "supplementalSourceIds": [],
+        "notes": "Heavy Hitter 指普通卡，和同名/近名武器传奇词条分开；未对该传奇词条在当前动力工具的交互做实测。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      },
+      "buildDetails": {
+        "asOfVersion": "第26赛季正式服 1.7.27.11",
+        "platformScope": "正式服通用机制。PC、PlayStation 和 Xbox 的操作提示按本机键位。未逐平台实测。",
+        "facts": "电锯属双手动力近战；有双锯片等改件，持续攻击耗 AP。官方新版 Heavy Hitter 卡文字排除动力工具，不把旧三张 Slugger 当平铺增伤。",
+        "recommendation": {
+          "levels": "Wiki 列电锯有20级装备档；约25级后调整卡组，50级补防御和装备词条。",
+          "legendary": "无必需传奇卡；满配后可选 Legendary Strength，先留普通卡位给生存。",
+          "core": "Incisor、Blocker。AP 吃紧补 Action Boy/Girl；维修压力大考虑 Makeshift Warrior。",
+          "alternatives": "常遇已致残目标再试 Slugger；耐久尚可时把维修卡位转防护。换非动力重击武器时再看 Heavy Hitter。",
+          "weapon": "普通电锯先用，改双锯片，按能获取的改装考虑火焰。Vampire’s 用于续航，后续可看耐久词条。近战原地无法接敌时备远程枪。",
+          "armor": "人类满血非动力甲混搭，先选能抗近身伤害的件，后续可换 Overeater’s 或按敌种减伤；动力甲可以作为危险区域备用。",
+          "buffs": "无必需变异或食物。想进一步增伤可走肉食与近战菜，优先解决 AP、命中位置和耐久。",
+          "play": "贴近后连续切割，预留 AP 用于重新接敌或撤退；留意维修状态。强制只能近战终结的词缀可准备电锯作备选。",
+          "tradeoffs": "无需子弹、容易用现成武器入门；接敌距离短，易吃范围伤害且耗 AP、耐久。",
+          "cost": "低到中。地图拾取与改件、维修材料是主要开销；不用先花500邮票买自动斧。"
+        },
+        "limitations": "Heavy Hitter 指普通卡，和同名/近名武器传奇词条分开；未对该传奇词条在当前动力工具的交互做实测。"
+      }
+    },
+    {
+      "id": "exp-ghoul-feral-auto-axe",
+      "title": "野化尸鬼自动斧：近战成型，接受枪械命中代价",
+      "body": "游戏事实｜尸鬼转化有50级与任务前提。高度野化偏近战，代价是枪械准度和部分属性下降；辐射会影响辉光。自动斧可从 Giuseppe 的邮票图纸路线取得。\n等级和解锁｜50级完成转化才可用，普通卡和邮票就位后再成型；没有必须等到300级的要求。\n传奇卡｜无必需传奇卡。后期可选 Legendary Strength / Agility 填卡位，先处理近身生存和 AP。\n核心卡｜Incisor、Blocker、Action Ghoul（留意辉光）；若修理频繁考虑 Makeshift Warrior。\n替代卡｜能稳定打到致残目标才留 Slugger。换用普通双手重击武器时可尝试 Heavy Hitter；自动斧本身不按该普通卡算收益。\n武器和词条｜电锯作过渡，成型换 Auto Axe。Vampire’s 偏续航，按生存与对单输出再挑词条；可以考虑电击改件，先核对邮票货架与材料。高阶四星不作起步前提。\n护甲和词条｜日常非动力甲用普通护甲，重近身威胁可换防护装。按遭遇配特定敌种减伤、AP 恢复或耐毒。Overeater’s 人类模板不套在尸鬼身上。\n变异、食物与补给｜高度野化为这条路线的打法条件；想切回远程先通过药品恢复野性计量。变异和近战菜是可选增强，辉光和耐久按活动补充。\n操作｜留 AP 接敌和躲机制，近身持续切割。打不易接近的突袭首领时分配机制位或改用另一套射击方案。\n优点和局限｜近身持续伤害路线清晰；野化降低远程兼容性，遇空中和远程首领受限。\n资源成本｜中高。常规自动斧图纸资料价500邮票，另算改件、修理和改变玩法时的药品。",
+      "category": "build",
+      "tags": [
+        "尸鬼",
+        "野化",
+        "Feral",
+        "自动斧",
+        "Auto-Axe",
+        "近战",
+        "非动力甲"
+      ],
+      "platform": "PC（Steam/MS Store）/ PlayStation / Xbox",
+      "version": "第26赛季正式服 1.7.27.11",
+      "status": "experience",
+      "reviewAfterDays": 30,
+      "sources": [
+        {
+          "title": "Ghoul Within Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-ghoul-within-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "尸鬼正式首发；转化、辉光、野性与身份限制。准确数值以当前卡面为准。"
+        },
+        {
+          "title": "Bethesda Support：Leap of Faith",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/69173/~/leap-of-faith---quest---fallout-76",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对50级和任务前提。"
+        },
+        {
+          "title": "C.A.M.P. Revamp Release Notes",
+          "url": "https://fallout.bethesda.net/en-US/news/fallout-76-c-a-m-p-revamp-release-notes",
+          "kind": "official",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "第22赛季正式公告；重武器、近战、稳定射击、穿甲等。重击卡注明排除动力工具。"
+        },
+        {
+          "title": "Fallout Wiki：Auto axe (Fallout 76)",
+          "url": "https://fallout.fandom.com/wiki/Auto_axe_(Fallout_76)",
+          "kind": "wiki",
+          "access": "page-text",
+          "checkedAt": "2026-11-10",
+          "note": "可读正文；历史原子商店渠道与常规邮票渠道分开，未核对实时在售。"
+        },
+        {
+          "title": "Fallout Wiki：Incisor",
+          "url": "https://fallout.fandom.com/wiki/Incisor",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引，核对近战穿甲。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 perks",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_perks",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；以可读索引核对卡名和部分解锁等级，过时效果让位于正式补丁。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary armor effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_armor_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "直连返回 402；索引可读，血量阈值用第26赛季公告。"
+        },
+        {
+          "title": "Fallout Wiki：Fallout 76 legendary melee effects",
+          "url": "https://fallout.fandom.com/wiki/Fallout_76_legendary_melee_effects",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对 Vampire’s 与近战词条类别，不断言当前攻速或重击交互。"
+        },
+        {
+          "title": "Fallout Wiki：Action Ghoul",
+          "url": "https://fallout.fandom.com/wiki/Action_Ghoul",
+          "kind": "wiki",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用索引核对50级、尸鬼与辉光条件。"
+        },
+        {
+          "title": "Bethesda Support：Legendary Perks",
+          "url": "https://help.bethesda.net/app/answers/detail/a_id/51786/~/legendary-perks---character-customization---fallout-76/1000",
+          "kind": "official",
+          "access": "indexed-text",
+          "checkedAt": "2026-11-10",
+          "note": "采用可读索引核对六个传奇卡槽等级。"
+        }
+      ],
+      "topic": "builds",
+      "classification": "versioned",
+      "verification": {
+        "state": "mechanics-checked-recommendation",
+        "checkedAt": "2026-11-10T10:37:30+08:00",
+        "liveTested": false,
+        "sourceIds": [
+          "ghoul",
+          "ghoulquest",
+          "camp",
+          "autoaxe",
+          "incisor",
+          "perkwiki",
+          "armormods",
+          "meleemods",
+          "actionghoul",
+          "legperk",
+          "nkaxe"
+        ],
+        "supplementalSourceIds": [
+          "nkaxe"
+        ],
+        "notes": "较早社区文章只用于玩法取舍；剔除了过时或未重新核实的卡阶、四星搭配和纯数值。"
+      },
+      "handoff": {
+        "starterReviewEligible": true
+      },
+      "buildDetails": {
+        "asOfVersion": "第26赛季正式服 1.7.27.11",
+        "platformScope": "正式服通用机制。PC、PlayStation 和 Xbox 的操作提示按本机键位。未逐平台实测。",
+        "facts": "尸鬼转化有50级与任务前提。高度野化偏近战，代价是枪械准度和部分属性下降；辐射会影响辉光。自动斧可从 Giuseppe 的邮票图纸路线取得。",
+        "recommendation": {
+          "levels": "50级完成转化才可用，普通卡和邮票就位后再成型；没有必须等到300级的要求。",
+          "legendary": "无必需传奇卡。后期可选 Legendary Strength / Agility 填卡位，先处理近身生存和 AP。",
+          "core": "Incisor、Blocker、Action Ghoul（留意辉光）；若修理频繁考虑 Makeshift Warrior。",
+          "alternatives": "能稳定打到致残目标才留 Slugger。换用普通双手重击武器时可尝试 Heavy Hitter；自动斧本身不按该普通卡算收益。",
+          "weapon": "电锯作过渡，成型换 Auto Axe。Vampire’s 偏续航，按生存与对单输出再挑词条；可以考虑电击改件，先核对邮票货架与材料。高阶四星不作起步前提。",
+          "armor": "日常非动力甲用普通护甲，重近身威胁可换防护装。按遭遇配特定敌种减伤、AP 恢复或耐毒。Overeater’s 人类模板不套在尸鬼身上。",
+          "buffs": "高度野化为这条路线的打法条件；想切回远程先通过药品恢复野性计量。变异和近战菜是可选增强，辉光和耐久按活动补充。",
+          "play": "留 AP 接敌和躲机制，近身持续切割。打不易接近的突袭首领时分配机制位或改用另一套射击方案。",
+          "tradeoffs": "近身持续伤害路线清晰；野化降低远程兼容性，遇空中和远程首领受限。",
+          "cost": "中高。常规自动斧图纸资料价500邮票，另算改件、修理和改变玩法时的药品。"
+        },
+        "limitations": "较早社区文章只用于玩法取舍；剔除了过时或未重新核实的卡阶、四星搭配和纯数值。"
+      }
     }
   ]
 }
